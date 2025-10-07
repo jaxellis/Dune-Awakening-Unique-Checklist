@@ -221,7 +221,7 @@ function updateRedoButtonState() {
 
 async function loadSchematics() {
 	try {
-		const res = await fetch('/data/schematics.json', { cache: 'no-cache' });
+		const res = await fetch('data/schematics.json', { cache: 'no-cache' });
 		if (!res.ok)
 			throw new Error('Failed to fetch schematics.json: ' + res.status);
 		schematics = await res.json();
