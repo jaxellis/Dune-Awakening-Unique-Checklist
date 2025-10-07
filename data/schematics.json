@@ -212,11 +212,23 @@
                 "Tool",
                 "Dew Reaper"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Table of Gods - Western Vermillius Gap",
+            "locationType": "Landmark",
             "category": "Iron",
             "url": "https://awakening.wiki/Buoyant_Reaper_Mk2",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\b3b73078d10a189e4b26f316a95ae564de27d318cde34ba9f0efc2c7ef1a346e.png"
+        },
+        {
+            "name": "Desert Dasher Garment",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": "Wreck of the Mithra - Western Vermillius Gap OR Small Falling Shipwrecks",
+            "locationType": "Landmark",
+            "category": "Iron",
+            "url": "https://awakening.wiki/Buoyant_Reaper_Mk2",
+            "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\f3290c1a9010161e5d7556e966bfb68b62f713ff1500a20c9e8719e3f4d3514c.png"
         },
         {
             "name": "Fila's Regret",
@@ -224,8 +236,8 @@
                 "Weapon",
                 "Ranged"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "The Wreck of The Pallas - Western Vermillius Gap",
+            "locationType": "Shipwreck",
             "category": "Iron",
             "url": "https://awakening.wiki/Fila%27s_Regret",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\c46d41caabd59dbb2b4860b170afd6fc870b09458e65a0ac839a98d493660db8.png"
@@ -236,8 +248,8 @@
                 "Tool",
                 "Water Container"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Table of Gods OR Mirzabah's Head - Western Vermillius Gap",
+            "locationType": "Landmark",
             "category": "Iron",
             "url": "https://awakening.wiki/Hajra_Literjon_Mk2",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\cf61773ed15c89b03faf1cedbb025abe4c6bcdf9629137d8e4674c8dec0571ba.png"
@@ -248,8 +260,8 @@
                 "Armor",
                 "Heavy"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Northwest Ironworks - Western Vermillius Gap",
+            "locationType": "Facility",
             "category": "Iron",
             "url": "https://awakening.wiki/Iri%27s_Gauntlets",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\7f694e5912c6766617798a759cae1af5f495b4020b87cbc6da7e6e68c59ed9a5.png"
@@ -260,8 +272,8 @@
                 "Weapon",
                 "Ranged"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "The Wreck of The Pallas - Western Vermillius Gap",
+            "locationType": "Shipwreck",
             "category": "Iron",
             "url": "https://awakening.wiki/Legion_Tattoo",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\f14543e1ec83682aac388b3af51067eabd75515e461c8d323c9f9276bd8328c1.png"
@@ -272,8 +284,8 @@
                 "Armor",
                 "Light"
             ],
-            "location": "Imperial Testing Station No. 10",
-            "locationType": "",
+            "location": "Miner's Watch - Western Vermillius Gap OR Imperial Testing Station No. 10 - Eastern Vermillius Gap",
+            "locationType": "Outpost",
             "category": "Iron",
             "url": "https://awakening.wiki/Mendia%27s_Boots",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\a6992f188c669338cf76863791a39fa3757acbd9d47f8c4b4c1dd9080aa18c86.png"
@@ -284,8 +296,8 @@
                 "Armor",
                 "Light"
             ],
-            "location": "Imperial Testing Station No. 10",
-            "locationType": "",
+            "location": "Miner's Watch - Western Vermillius Gap OR Imperial Testing Station No. 10 - Eastern Vermillius Gap",
+            "locationType": "Outpost",
             "category": "Iron",
             "url": "https://awakening.wiki/Mendia%27s_Gauntlets",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\8691dbeac99b11af77f82c63db5f88f7591470bd71efcdb06e7ebcbaab6211c0.png"
@@ -296,8 +308,8 @@
                 "Armor",
                 "Light"
             ],
-            "location": "Imperial Testing Station No. 10",
-            "locationType": "",
+            "location": "Miner's Watch - Western Vermillius Gap OR Imperial Testing Station No. 10 - Eastern Vermillius Gap",
+            "locationType": "Outpost",
             "category": "Iron",
             "url": "https://awakening.wiki/Mendia%27s_Jacket",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\e3a947f11f027743c4578cdd9adab70e3e57d0710f40c4581dc47d6d4d5cb954.png"
@@ -308,8 +320,8 @@
                 "Armor",
                 "Light"
             ],
-            "location": "Imperial Testing Station No. 10",
-            "locationType": "",
+            "location": "Miner's Watch - Western Vermillius Gap OR Imperial Testing Station No. 10 - Eastern Vermillius Gap",
+            "locationType": "Outpost",
             "category": "Iron",
             "url": "https://awakening.wiki/Mendia%27s_Pants",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\3dfbc868419e2a6a8faa6e11cc0dc6310631e0995f4937f78cebd00cf439ecc5.png"
@@ -320,8 +332,8 @@
                 "Armor",
                 "Light"
             ],
-            "location": "Imperial Testing Station No. 10",
-            "locationType": "",
+            "location": "Miner's Watch - Western Vermillius Gap OR Imperial Testing Station No. 10 - Eastern Vermillius Gap",
+            "locationType": "Outpost",
             "category": "Iron",
             "url": "https://awakening.wiki/Mendia%27s_Wrap",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\1506bf540464e72db04751d54712c6ce3569e8583feac6326848bb92486c974f.png"
