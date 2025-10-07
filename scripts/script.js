@@ -2,6 +2,7 @@ const STORAGE_KEY = 'dune-awakening-checklist-v1';
 const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
 
 let schematics = {};
+let locationIcons = {};
 let checklistData = {};
 let appSettings = {
 	hideChecked: false,
@@ -228,6 +229,18 @@ async function loadSchematics() {
 	} catch (err) {
 		console.error('Error loading schematics.json', err);
 		schematics = {};
+	}
+}
+
+async function loadLocationIcons() {
+	try {
+		const res = await fetch('data/location_icons.json', { cache: 'no-cache' });
+		if (!res.ok)
+			throw new Error('Failed to fetch location_icons.json: ' + res.status);
+		locationIcons = await res.json();
+	} catch (err) {
+		console.error('Error loading location_icons.json', err);
+		locationIcons = {};
 	}
 }
 
@@ -637,10 +650,42 @@ function initializeChecklist() {
 				nameHtml = safeName;
 			}
 			nameDiv.innerHTML = nameHtml;
-
 			const locationDiv = document.createElement('div');
 			locationDiv.className = 'item-location';
-			locationDiv.textContent = `📍 ${item.location || ''}`;
+
+			let iconSrc = null;
+			let iconAlt = 'Location';
+
+			if (item.locationType && typeof item.locationType === 'string') {
+				const match = Object.values(locationIcons).find(
+					(icon) =>
+						icon.name &&
+						icon.name.trim().toLowerCase() ===
+							item.locationType.trim().toLowerCase()
+				);
+				if (match && match.image) {
+					iconSrc = '/' + match.image.replace(/\\/g, '/').replace(/^\//, '');
+					iconAlt = match.name;
+				}
+			}
+
+			if (iconSrc) {
+				const iconImg = document.createElement('img');
+				iconImg.src = iconSrc;
+				iconImg.alt = iconAlt;
+				iconImg.className = 'location-icon';
+				locationDiv.appendChild(iconImg);
+			} else {
+				// Use fallback emoji
+				const fallback = document.createElement('span');
+				fallback.textContent = '📍';
+				fallback.className = 'location-fallback';
+				locationDiv.appendChild(fallback);
+			}
+
+			// Add the location text
+			const locationText = document.createTextNode(` ${item.location || ''}`);
+			locationDiv.appendChild(locationText);
 
 			infoDiv.appendChild(nameDiv);
 			infoDiv.appendChild(locationDiv);
@@ -681,7 +726,7 @@ function initializeChecklist() {
 	applyHideCheckedSetting();
 }
 
-loadSchematics().then(() => {
+Promise.all([loadSchematics(), loadLocationIcons()]).then(() => {
 	try {
 		const raw = localStorage.getItem(STORAGE_KEY);
 		checklistData = raw ? JSON.parse(raw) || {} : {};
@@ -692,7 +737,6 @@ loadSchematics().then(() => {
 	loadSettings();
 	loadFilters();
 	initializeChecklist();
-
 	buildFiltersUI();
 });
 
