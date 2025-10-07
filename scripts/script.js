@@ -636,13 +636,6 @@ function initializeChecklist() {
 			} else {
 				nameHtml = safeName;
 			}
-
-			nameHtml += item.tier
-				? `<span class="tier-badge tier-${
-						item.tier
-				  }">${item.tier.toUpperCase()}</span>`
-				: '';
-
 			nameDiv.innerHTML = nameHtml;
 
 			const locationDiv = document.createElement('div');
