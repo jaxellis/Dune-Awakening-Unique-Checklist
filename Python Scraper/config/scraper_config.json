@@ -1,0 +1,14 @@
+{
+    "backoff_factor": 0.5,
+    "base_url": "https://awakening.wiki",
+    "cache_dir": ".cache",
+    "cache_expiry": 86400,
+    "clear_cache": false,
+    "concurrency_limit": 10,
+    "headers": {},
+    "output_file": "unique_items.json",
+    "retry_limit": 5,
+    "test_amount": 20,
+    "test_mode": false,
+    "verbose": false
+}

@@ -1,0 +1,30 @@
+# Ignore Python cache and compiled files
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Ignore pipenv/venv
+.venv/
+venv/
+env/
+
+# Ignore cache directories
+.cache/
+.cache
+
+# Ignore logs
+logs/
+logs/*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE/editor folders
+.vscode/
+.idea/
+
+# Ignore images/output if you prefer (optional)
+# output/images/

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Dune Awakening - Unique Schematics Checklist</title>
+		<link rel="stylesheet" href="/styles/styles.css" />
+		<link
+			rel="icon"
+			href="https://www.google.com/s2/favicons?domain=duneawakening.com&sz=32"
+		/>
+		<script src="/scripts/script.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1>Dune Awakening - Unique Schematics Checklist</h1>
+				<div class="subtitle">Track all unique schematics across Arrakis</div>
+				<br
+				<p>
+					⚠️ Note: Your progress will be retained on this machine/browser.
+				</p>
+				<p>
+					Use the Export/Import buttons to move progress between devices or back
+					up.
+				</p>
+			</div>
+
+			<div class="controls">
+				<button class="control-btn" onclick="toggleAll(true)">Check All</button>
+				<button class="control-btn" onclick="toggleAll(false)">
+					Uncheck All
+				</button>
+
+				<input
+					type="text"
+					class="search-box"
+					placeholder="Search schematics..."
+					oninput="filterItems(this.value)"
+				/>
+				<button class="control-btn" id="undoBtn" onclick="undoLast()" disabled>
+					Undo
+				</button>
+				<button class="control-btn" id="redoBtn" onclick="redoLast()" disabled>
+					Redo
+				</button>
+				<div class="settings">
+					<button
+						class="control-btn settings-btn"
+						id="settingsBtn"
+						onclick="toggleSettings()"
+					>
+						⚙️
+					</button>
+					<div class="settings-menu" id="settingsMenu">
+						<button
+							class="control-btn"
+							data-icon="📥"
+							onclick="importProgress()"
+						>
+							Import
+						</button>
+						<button
+							class="control-btn"
+							data-icon="📤"
+							onclick="exportProgress()"
+						>
+							Export
+						</button>
+						<button
+							class="control-btn"
+							data-icon="👁️"
+							id="hideCheckedBtn"
+							onclick="toggleHideChecked()"
+						>
+							Hide checked items
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="filter-bar">
+				<div id="filters" class="filters" aria-label="Filters"></div>
+			</div>
+
+			<div class="stats">
+				<div class="stats-text">
+					Progress: <span id="checkedCount">0</span> /
+					<span id="totalCount">0</span> (<span id="percentage">0</span>%)
+				</div>
+			</div>
+
+			<div id="categories"></div>
+
+			<div
+				id="toast"
+				class="toast hidden"
+				role="status"
+				aria-live="polite"
+			></div>
+
+			<div class="footer"></div>
+		</div>
+	</body>
+</html>
