@@ -78,7 +78,7 @@
                 "Tool",
                 "Water Container"
             ],
-            "location": "Eastern Safeway - Hagga Basin South",
+            "location": "Eastern Safeway - Hagga Basin South OR Griffin's Reach Trading Post trader",
             "locationType": "Cave",
             "category": "Copper",
             "url": "https://awakening.wiki/Hajra_Literjon_Mk1",
@@ -186,7 +186,7 @@
                 "Tool",
                 "Suspensor"
             ],
-            "location": "Testing Station 2 - Hagga Basin South - Near the Planetologist Trainer",
+            "location": "Imperial Testing Station No. 2 - Hagga Basin South - Near the Planetologist Trainer",
             "locationType": "Station",
             "category": "Copper",
             "url": "https://awakening.wiki/The_Emperor's_Wings_Mk1",
