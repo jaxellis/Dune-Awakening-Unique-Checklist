@@ -90,8 +90,8 @@
                 "Armor",
                 "Stillsuit"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Dewgap Gateway - Hagga Basin South",
+            "locationType": "Outpost",
             "category": "Copper",
             "url": "https://awakening.wiki/Hollower_Stillsuit_Boots",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\fc9debe8dee9282913524b837fb78b76501c112dd3f235b14815eacca41ba0d0.png"
@@ -102,8 +102,8 @@
                 "Armor",
                 "Stillsuit"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Dewgap Gateway - Hagga Basin South",
+            "locationType": "Outpost",
             "category": "Copper",
             "url": "https://awakening.wiki/Hollower_Stillsuit_Garment",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\2e97682e28693e26ec45299ad3c76006c4cf78e11cd0eb1a09b673d32f22e59d.png"
@@ -114,8 +114,8 @@
                 "Armor",
                 "Stillsuit"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Dewgap Gateway - Hagga Basin South",
+            "locationType": "Outpost",
             "category": "Copper",
             "url": "https://awakening.wiki/Hollower_Stillsuit_Gloves",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\935ef7b294c5bdd2fae23b893a1de066accb7c6df0a177106ced5d2bf3ea205d.png"
@@ -126,8 +126,8 @@
                 "Armor",
                 "Stillsuit"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Dewgap Gateway - Hagga Basin South",
+            "locationType": "Outpost",
             "category": "Copper",
             "url": "https://awakening.wiki/Hollower_Stillsuit_Mask",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\250784def6ed6df005298da8fdb51690ea9bc1838d1b714791b5d6f6ed120034.png"
@@ -138,8 +138,8 @@
                 "Weapon",
                 "Melee"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "The Wreck Of The Alcyon - Hagga Basin South",
+            "locationType": "Shipwreck",
             "category": "Copper",
             "url": "https://awakening.wiki/Kaleff%27s_Drinker",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\81a407c518ba1445cf112c66e797c0e9cb7581e57ae292d166f64debf6510323.png"
@@ -150,8 +150,8 @@
                 "Vehicle",
                 "Land"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Keyhole Rock - Hagga Basin South",
+            "locationType": "Outpost",
             "category": "Copper",
             "url": "https://awakening.wiki/Mohandis_Sandbike_Engine_Mk1",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\93e29c57a5f2c59f36cc9b436b6fadbbff48d262db2ea99b9e85ae8e57b6a8c1.png"
@@ -162,11 +162,47 @@
                 "Tool",
                 "Power Pack"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Keyhole Rock - Hagga Basin South",
+            "locationType": "Outpost",
             "category": "Copper",
             "url": "https://awakening.wiki/Old_Sparky_Mk1",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\63307bbdd5fb299cb44d0ae0697b338cceb95c129e99d97a7ce626ade212984c.png"
+        },
+        {
+            "name": "Sim's Cutter",
+            "types": [
+                "Tool",
+                "Cutteray"
+            ],
+            "location": "Keyhole Rock - Hagga Basin South",
+            "locationType": "Outpost",
+            "category": "Copper",
+            "url": "https://awakening.wiki/Sim's_Cutter",
+            "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\fad16108302c5ce8d54c23dadae42059c9725c769cb62e81214b5434db24178a.png"
+        },
+        {
+            "name": "The Emperor's Wings Mk1",
+            "types": [
+                "Tool",
+                "Suspensor"
+            ],
+            "location": "Testing Station 2 - Hagga Basin South - Near the Planetologist Trainer",
+            "locationType": "Station",
+            "category": "Copper",
+            "url": "https://awakening.wiki/The_Emperor's_Wings_Mk1",
+            "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\cf33387d444dafa0fa98ebe1e25194109a7c17859cfbfaa5174b4acf3d262f64.png"
+        },
+        {
+            "name": "Way of the Fallen",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": "Old Griffin Hideaway  - Hagga Basin South",
+            "locationType": "Cave",
+            "category": "Copper",
+            "url": "https://awakening.wiki/Way_of_the_Fallen",
+            "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\601f0b5d72fbf1886d2865b2c77abe470fac71244bdecaf2f2ec25e9e4389779.png"
         }
     ],
     "Iron": [
