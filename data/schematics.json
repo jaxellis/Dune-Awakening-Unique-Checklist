@@ -483,6 +483,18 @@
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\63307bbdd5fb299cb44d0ae0697b338cceb95c129e99d97a7ce626ade212984c.png"
         },
         {
+            "name": "Olef's Quickcutter",
+            "types": [
+                "Tool",
+                "Cutteray"
+            ],
+            "location": "Imperial Testing Station No. 197",
+            "locationType": "Station",
+            "category": "Iron",
+            "url": "https://awakening.wiki/Olef%27s_Quickcutter",
+            "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\ea5e06fb3bbd89edd238aaa5b5e3c65cfe873ad088b57aa2fc626f865b0ad771.png"
+        },
+        {
             "name": "Pseudo Pulse-Sword",
             "types": [
                 "Weapon",
