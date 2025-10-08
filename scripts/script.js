@@ -777,20 +777,26 @@ function undoLast() {
 		updateStats();
 		saveToStorage();
 		updateUndoButtonState();
-
-		if (meta && meta.type) {
-			if (meta.type === 'item-toggle') {
-				const action = meta.to ? 'Unmarked' : 'Remarked';
-				showToast(`${action} ${meta.name}`);
-			} else if (meta.type === 'bulk-toggle') {
-				const action = meta.to ? 'Checked all items' : 'Unchecked all items';
-				showToast(`Undo: ${action}`);
-			} else if (meta.type === 'clear') {
-				showToast('Undo: progress restored');
-			} else if (meta.type === 'import') {
-				showToast('Undo: previous progress restored');
-			} else {
-				showToast('Undo: previous state restored');
+		if (meta && meta?.type) {
+			let action = '';
+			switch (meta.type) {
+				case 'item-toggle':
+					action = meta.to ? 'Unmarked' : 'Remarked';
+					showToast(`${action} ${meta?.name}`);
+					break;
+				case 'bulk-toggle':
+					action = meta.to ? 'Checked all items' : 'Unchecked all items';
+					showToast(`Undo: ${action}`);
+					break;
+				case 'clear':
+					showToast('Undo: progress restored');
+					break;
+				case 'import':
+					showToast('Undo: previous progress restored');
+					break;
+				default:
+					showToast('Undo: previous state restored');
+					break;
 			}
 		} else {
 			showToast('Undo: previous state restored');
