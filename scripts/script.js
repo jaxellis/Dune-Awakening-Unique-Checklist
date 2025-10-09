@@ -1,7 +1,6 @@
 const STORAGE_KEY = 'dune-awakening-checklist-v1';
 const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
-const IMAGE_PATH_PREFIX =
-	'Dune-Awakening-Unique-Checklist/Python Scraper/output/images/';
+const IMAGE_PATH_PREFIX = 'Python Scraper/output/images/';
 
 let schematics = {};
 let locationIcons = {};
