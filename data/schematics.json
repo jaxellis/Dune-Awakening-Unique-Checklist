@@ -500,7 +500,7 @@
                 "Weapon",
                 "Melee"
             ],
-            "location": "Miner's Watch - Western Vermillius Gap OR Kirab Camp - Eastern Vermillius Gap OR Small Falling Shipwrecks",
+            "location": "Miner's Watch - Western Vermillius Gap OR NPC Camp - Eastern Vermillius Gap OR Small Falling Shipwrecks",
             "locationType": "Outpost",
             "category": "Iron",
             "url": "https://awakening.wiki/Pseudo_Pulse-Sword",
@@ -586,8 +586,8 @@
                 "Weapon",
                 "Ranged"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Imperial Testing Station No. 29 - Hagga Rift",
+            "locationType": "Station",
             "category": "Steel",
             "url": "https://awakening.wiki/Artisan_Disruptor_Pistol",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\5141870b221f342dcecda0f246bc3ea2cc1533d1bcb2903827eda5cc900d19a6.png"
@@ -598,8 +598,8 @@
                 "Weapon",
                 "Ranged"
             ],
-            "location": "Hagga Rift",
-            "locationType": "",
+            "location": "Arctus Cavern - Hagga Rift",
+            "locationType": "Outpost",
             "category": "Steel",
             "url": "https://awakening.wiki/Assassin%27s_Rifle",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\4a938faf539b4ce02254210ce3959276d2744fbaa89ac4670eec4d0b36dd211b.png"
@@ -610,8 +610,8 @@
                 "Vehicle",
                 "Land"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "NPC Camp - Eastern Vermillius Gap near Way Out East outpost",
+            "locationType": "Camp",
             "category": "Steel",
             "url": "https://awakening.wiki/Bigger_Buggy_Boot_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\af5f88491fa0368ac4713ccbc2952c9a96f028724b8ee27fd33ae4aee5ecc1e7.png"
@@ -622,8 +622,8 @@
                 "Vehicle",
                 "Land"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "NPC Camp - Eastern Vermillius Gap near Way Out East outpost",
+            "locationType": "Camp",
             "category": "Steel",
             "url": "https://awakening.wiki/Bluddshot_Buggy_Engine_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\7fddabc50f8e2cd6204fa882d331bfd2f1a9dade0e59b2908e27374ac5e08ecf.png"
@@ -634,8 +634,8 @@
                 "Tool",
                 "Dew Reaper"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Mirzabah's Head - Western Vermillius Gap OR Step Stone Cavern - Hagga Rift OR Hand of Khidr - Jabal Eifrit Al-janub OR NPC Camp - Hagga Rift near The Weeping Chasm OR unmarked outpost in Southern part of Jabal Eifrit Al-sharq",
+            "locationType": "Landmark",
             "category": "Steel",
             "url": "https://awakening.wiki/Buoyant_Reaper_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\5c959465751bdf903a96ffe3660627a30cd79d0f512c72d24de11428382f3c66.png"
@@ -646,8 +646,8 @@
                 "Tool",
                 "Cutteray"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Eastern Jumble - Jabal Eifrit Al-gharb OR Imperial Testing Station No. 76 - Jabal Eifrit Al-Janub OR Imperial Testing Station No. 29 - Hagga Rift OR CHOAM Mineral Extraction Facility #6 - Hagga Rift",
+            "locationType": "Cave",
             "category": "Steel",
             "url": "https://awakening.wiki/Callie%27s_Breaker",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\3fd1b1c93e302ba023f873e9ba87530f1c6dff4842ee3c530ddf267acc29756e.png"
@@ -658,8 +658,8 @@
                 "Tool",
                 "Compactor"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "The Anomoly - Western Vermillius Gap OR The Gasp - Hagga Rift OR Crystal Cove - Hagga Rift OR The Weeping Chasm - Hagga Rift OR Imperial Station No. 29 - Hagga Rift",
+            "locationType": "Landmark",
             "category": "Steel",
             "url": "https://awakening.wiki/Compact_Compactor_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\5e10b39649611e894a067cd28364b7abd957e67ac8c71b39b2f8388fb73e7172.png"
@@ -670,8 +670,8 @@
                 "Tool",
                 "Fluid Extractor"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Hand of Khidr - Jabal Eifrit Al-janub",
+            "locationType": "Landmark",
             "category": "Steel",
             "url": "https://awakening.wiki/Filter_Extractor_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\9ba0d1619cb7ab7a5d6d28689bae9294e01b5429c1bdefbb921558ee09cf6236.png"
@@ -682,8 +682,8 @@
                 "Vehicle",
                 "Land"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "CHOAM Mineral Extraction Facility #6 - Hagga Rift OR Imperial Testing Station No. 29 - Hagga Rift",
+            "locationType": "Facility",
             "category": "Steel",
             "url": "https://awakening.wiki/Focused_Buggy_Cutteray_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\a2a4723cea0cb2f50a592af8efbc9656ac7fbf632eb17984bf13818d06ba2818.png"
@@ -694,8 +694,8 @@
                 "Tool",
                 "Bloodbag"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "CHOAM Mineral Extraction Facility #6 - Hagga Rift OR Imperial Testing Station No. 29 - Hagga Rift OR Hand of Khidr - Jabal Eifrit Al-janub OR NPC Camp west of Runaway Station OR Unmarked outpost in Southern part of Jabal Eifrit Al-sharq or Step Stone Cavern - Hagga Rift",
+            "locationType": "Facility",
             "category": "Steel",
             "url": "https://awakening.wiki/Glutton%27s_Bloodbag",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\a4c4632ae2c602fb5e130d750d1aeb3d4aa5279e0c299bd5e3d08ba856c5517c.png"
@@ -706,8 +706,8 @@
                 "Weapon",
                 "Melee"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Kel's Fallback - Jabal Eifrit Al-sharq OR Imperial Testing Station No. 76 - Jabal Eifrit Al-janub OR Beneath the Jumble - Jabal Eifrit Al-gharb",
+            "locationType": "Cave",
             "category": "Steel",
             "url": "https://awakening.wiki/Glutton%27s_Drinker",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\5e6bdb8aeaded767b041442c2af9281e5027c8a4e9a08f59ee3328589ab6d295.png"
@@ -718,8 +718,8 @@
                 "Tool",
                 "Water Container"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "Step Stone Cavern - Hagga Rift OR Hand of Khidr - Jabal Eifrit Al-janub OR NPC Camp - Hagga Rift near The Weeping Chasm OR unmarked outpost in Southern part of Jabal Eifrit Al-sharq",
+            "locationType": "Cave",
             "category": "Steel",
             "url": "https://awakening.wiki/Hajra_Literjon_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\cf61773ed15c89b03faf1cedbb025abe4c6bcdf9629137d8e4674c8dec0571ba.png"
@@ -730,8 +730,8 @@
                 "Tool",
                 "Scanner"
             ],
-            "location": "",
-            "locationType": "",
+            "location": "The Spiral - Hagga Rift OR Arctus Cavern - Hagga Rift OR Khidr's Shadow - Jabal Eifrit Al-janub",
+            "locationType": "Outpost",
             "category": "Steel",
             "url": "https://awakening.wiki/Handheld_Life_Scanner_Mk3",
             "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\8d876740023330efe20bb6ae10541fa85a4c3a795b9fd26c6f68b8d5a8cddd7e.png"
