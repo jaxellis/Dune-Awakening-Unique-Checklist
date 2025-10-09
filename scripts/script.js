@@ -1,5 +1,7 @@
 const STORAGE_KEY = 'dune-awakening-checklist-v1';
 const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
+const IMAGE_PATH_PREFIX =
+	'Dune-Awakening-Unique-Checklist/Python Scraper/output/images/';
 
 let schematics = {};
 let locationIcons = {};
@@ -627,8 +629,7 @@ function initializeChecklist() {
 				typeof item.image === 'string' &&
 				item.image.trim() !== ''
 			) {
-				const src = '/' + item.image.replace(/\\/g, '/').replace(/^\//, '');
-				img.src = src;
+				img.src = IMAGE_PATH_PREFIX + item.image;
 				img.alt = item.name || 'item image';
 			} else {
 				img.alt = item.name || 'item image';
@@ -664,7 +665,7 @@ function initializeChecklist() {
 							item.locationType.trim().toLowerCase()
 				);
 				if (match && match.image) {
-					iconSrc = '/' + match.image.replace(/\\/g, '/').replace(/^\//, '');
+					iconSrc = IMAGE_PATH_PREFIX + '/' + match.image;
 					iconAlt = match.name;
 				}
 			}

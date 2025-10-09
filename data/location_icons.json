@@ -1,30 +1,30 @@
 [
     {
         "name": "Camp",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\ce34545c687b071b3ed1f9db0ec8c1cb2a77c0b036999d4ebcdd7856e66f71e6.png"
+        "image": "ce34545c687b071b3ed1f9db0ec8c1cb2a77c0b036999d4ebcdd7856e66f71e6.png"
     },
     {
         "name": "Cave",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\3011a91c0cd4b4d415db918c8d99811327c78e7f7a0a86c582496992d1218409.png"
+        "image": "3011a91c0cd4b4d415db918c8d99811327c78e7f7a0a86c582496992d1218409.png"
     },
     {
         "name": "Facility",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\bc0590bb74923c09e2c3c3ae3080fb3eb9a8a4ecd890f0d3395d74a6fbab4b8c.png"
+        "image": "bc0590bb74923c09e2c3c3ae3080fb3eb9a8a4ecd890f0d3395d74a6fbab4b8c.png"
     },
     {
         "name": "Landmark",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\c9824d041c2865bef6c71f928a6963babfd2cfe4a9689b63d6e24c09bfad4a44.png"
+        "image": "c9824d041c2865bef6c71f928a6963babfd2cfe4a9689b63d6e24c09bfad4a44.png"
     },
     {
         "name": "Outpost",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\3297e940ef13473004e93cdb64eccda33784628ba55324004bfdb3d7b63e8bf2.png"
+        "image": "3297e940ef13473004e93cdb64eccda33784628ba55324004bfdb3d7b63e8bf2.png"
     },
     {
         "name": "Shipwreck",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\8573f35f124d15f4a106ba5cf699b9946ef1be21d6c952dd0a9f4b1d8a7b04cc.png"
+        "image": "8573f35f124d15f4a106ba5cf699b9946ef1be21d6c952dd0a9f4b1d8a7b04cc.png"
     },
     {
         "name": "Station",
-        "image": "Dune-Awakening-Unique-Checklist\\Python Scraper\\output\\images\\d2feb7c1d557ecb4aff469c619ed9a3671bd00bc34f9d1a32e6c190ba802fe22.png"
+        "image": "d2feb7c1d557ecb4aff469c619ed9a3671bd00bc34f9d1a32e6c190ba802fe22.png"
     }
 ]
