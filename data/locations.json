@@ -1,0 +1,176 @@
+{
+    "Hagga Rift": [
+        {
+            "location": "Arctus Cavern",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460458"
+        },
+        {
+            "location": "CHOAM Mineral Extraction Facility #6",
+            "locationType": "Facility",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460462"
+        },
+        {
+            "location": "Crystal Cove",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=479749"
+        },
+        {
+            "location": "Imperial Testing Station No. 29",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460454"
+        },
+        {
+            "location": "Step Stone Cavern",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461292"
+        },
+        {
+            "location": "The Gasp",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460433"
+        },
+        {
+            "location": "The Spiral",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460452"
+        }
+    ],
+    "Hagga Basin South": [
+        {
+            "location": "Crashed Ornithopter above NPC camp west of The Wreck Of The Alcyon",
+            "locationType": "Camp",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461366"
+        },
+        {
+            "location": "Dewgap Gateway",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446826"
+        },
+        {
+            "location": "Eastern Safeway",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461551"
+        },
+        {
+            "location": "Griffin's Reach Trading Post",
+            "locationType": "Trading",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446829"
+        },
+        {
+            "location": "Imperial Testing Station No. 2",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446831"
+        },
+        {
+            "location": "Keyhole Rock",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446847"
+        },
+        {
+            "location": "Old Griffin Hideaway",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446828"
+        },
+        {
+            "location": "The Wreck Of The Alcyon",
+            "locationType": "Shipwreck",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446834"
+        }
+    ],
+    "Jabal Eifrit Al-gharb": [
+        {
+            "location": "Beneath the Jumble",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461498"
+        },
+        {
+            "location": "Eastern Jumble",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460512"
+        }
+    ],
+    "Jabal Eifrit Al-janub": [
+        {
+            "location": "Hand of Khidr",
+            "locationType": "Landmark",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460497"
+        },
+        {
+            "location": "Khidr's Shadow",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460494"
+        }
+    ],
+    "Jabal Eifrit Al-sharq": [
+        {
+            "location": "Kel's Fallback",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460483"
+        },
+        {
+            "location": "Unmarked outpost",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=468227"
+        }
+    ],
+    "Eastern Vermillius Gap": [
+        {
+            "location": "Coils of the Wyrm",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446928"
+        },
+        {
+            "location": "Ghanima Cavern",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446891"
+        },
+        {
+            "location": "Imperial Testing Station No. 10",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446877"
+        }
+    ],
+    "Western Vermillius Gap": [
+        {
+            "location": "Imperial Testing Station No. 197",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446914"
+        },
+        {
+            "location": "Mirzabah's Head",
+            "locationType": "Landmark",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=459929"
+        },
+        {
+            "location": "Northwest Ironworks",
+            "locationType": "Facility",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446922"
+        },
+        {
+            "location": "Suk Alusus",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446907"
+        },
+        {
+            "location": "Table of Gods",
+            "locationType": "Landmark",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461579"
+        },
+        {
+            "location": "The Anomaly",
+            "locationType": "Landmark",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446903"
+        },
+        {
+            "location": "The Wreck of The Pallas",
+            "locationType": "Shipwreck",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446920"
+        },
+        {
+            "location": "Wreck of the Mithra",
+            "locationType": "Landmark",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=480062"
+        }
+    ]
+}
