@@ -26,5 +26,9 @@
     {
         "name": "Station",
         "image": "d2feb7c1d557ecb4aff469c619ed9a3671bd00bc34f9d1a32e6c190ba802fe22.png"
+    },
+    {
+        "name": "Trading",
+        "image": "d30090f9243edc00cf523603586f4a81df6eb493ae7e90eb853dfb2dcd4ee805.png"
     }
 ]
