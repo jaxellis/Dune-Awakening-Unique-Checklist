@@ -32,7 +32,7 @@ async def process_item(client: httpx.AsyncClient, url: str) -> dict:
                 if image_url.startswith("//"):
                     image_url = "https:" + image_url
 
-                images_dir = Path("output/images")
+                images_dir = Path("../images")
                 images_dir.mkdir(parents=True, exist_ok=True)
 
                 import hashlib
@@ -132,7 +132,7 @@ async def process_main():
         if "Unknown" in results_by_category and not results_by_category["Unknown"]:
             del results_by_category["Unknown"]
 
-    output_dir = Path("output")
+    output_dir = Path("../output")
     output_dir.mkdir(exist_ok=True)
     out_file = output_dir / CONFIG.get("output_file", "unique_items.json")
     with open(out_file, "w", encoding="utf-8") as f:
