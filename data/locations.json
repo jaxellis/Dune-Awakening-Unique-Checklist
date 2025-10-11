@@ -16,6 +16,11 @@
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=479749"
         },
         {
+            "location": "Imperial Testing Station No. 23",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460450"
+        },
+        {
             "location": "Imperial Testing Station No. 29",
             "locationType": "Station",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460454"
@@ -97,6 +102,11 @@
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460497"
         },
         {
+            "location": "Imperial Testing Station No. 76",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460509"
+        },
+        {
             "location": "Khidr's Shadow",
             "locationType": "Outpost",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460494"
@@ -109,7 +119,7 @@
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460483"
         },
         {
-            "location": "Unmarked outpost",
+            "location": "Unmarked Outpost",
             "locationType": "Outpost",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=468227"
         }
@@ -136,6 +146,11 @@
             "location": "Imperial Testing Station No. 197",
             "locationType": "Station",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446914"
+        },
+        {
+            "location": "Miner's Watch",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446924"
         },
         {
             "location": "Mirzabah's Head",
@@ -171,6 +186,32 @@
             "location": "Wreck of the Mithra",
             "locationType": "Landmark",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=480062"
+        }
+    ],
+    "Eastern Shield Wall": [
+        {
+            "location": "Imperial Testing Station No. 142",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460526"
+        }
+    ],
+    "Western Shield Wall": [
+        {
+            "location": "Imperial Testing Station No. 60",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460550"
+        }
+    ],
+    "The O'odham": [
+        {
+            "location": "Imperial Testing Station No. 71",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460564"
+        },
+        {
+            "location": "Imperial Testing Station No. 163",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460562"
         }
     ]
 }
