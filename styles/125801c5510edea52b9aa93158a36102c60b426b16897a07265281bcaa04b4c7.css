@@ -571,6 +571,7 @@ h1 {
 	height: 24px;
 	object-fit: contain;
 	vertical-align: middle;
+	padding-right: 4px;
 }
 
 .toast {

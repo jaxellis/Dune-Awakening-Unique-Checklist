@@ -2,8 +2,11 @@ const STORAGE_KEY = 'dune-awakening-checklist-v1';
 const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
 const IMAGE_PATH_PREFIX = 'images/';
 
-let schematics = {};
-let locationIcons = {};
+let jsonData = {
+	schematics: {},
+	locationIcons: {},
+	locations: {},
+};
 let checklistData = {};
 let appSettings = {
 	hideChecked: false,
@@ -39,7 +42,7 @@ function buildFiltersUI() {
 	filtersDiv.innerHTML = '';
 
 	const map = {};
-	Object.values(schematics)
+	Object.values(jsonData.schematics)
 		.flat()
 		.forEach((item) => {
 			if (!Array.isArray(item.types) || item.types.length === 0) return;
@@ -169,7 +172,7 @@ function applyAllFilters() {
 				item.querySelector('.item-name')?.textContent?.trim() || null;
 			if (name) {
 				let found = null;
-				for (const arr of Object.values(schematics)) {
+				for (const arr of Object.values(jsonData.schematics)) {
 					found = arr.find((it) => (it.name || '').trim() === name);
 					if (found) break;
 				}
@@ -221,27 +224,14 @@ function updateRedoButtonState() {
 	btn.disabled = redoStack.length === 0;
 }
 
-async function loadSchematics() {
+async function loadJsonIntoGlobal(filePath, key) {
 	try {
-		const res = await fetch('data/schematics.json', { cache: 'no-cache' });
-		if (!res.ok)
-			throw new Error('Failed to fetch schematics.json: ' + res.status);
-		schematics = await res.json();
+		const res = await fetch(filePath, { cache: 'no-cache' });
+		if (!res.ok) throw new Error(`Failed to fetch ${filePath}: ${res.status}`);
+		jsonData[key] = await res.json();
 	} catch (err) {
-		console.error('Error loading schematics.json', err);
-		schematics = {};
-	}
-}
-
-async function loadLocationIcons() {
-	try {
-		const res = await fetch('data/location_icons.json', { cache: 'no-cache' });
-		if (!res.ok)
-			throw new Error('Failed to fetch location_icons.json: ' + res.status);
-		locationIcons = await res.json();
-	} catch (err) {
-		console.error('Error loading location_icons.json', err);
-		locationIcons = {};
+		console.error(`Error loading ${filePath}`, err);
+		jsonData[key] = {};
 	}
 }
 
@@ -502,7 +492,7 @@ function filterItems(searchTerm) {
 			const name = item.querySelector('.item-name')?.textContent?.trim() || '';
 			if (name) {
 				let found = null;
-				for (const arr of Object.values(schematics)) {
+				for (const arr of Object.values(jsonData.schematics)) {
 					found = arr.find((it) => (it.name || '').trim() === name);
 					if (found) break;
 				}
@@ -546,7 +536,7 @@ function initializeChecklist() {
 		t && typeof t === 'string' ? t.charAt(0).toUpperCase() + t.slice(1) : t;
 
 	let totalItems = 0;
-	for (const [catKey, items] of Object.entries(schematics)) {
+	for (const [catKey, items] of Object.entries(jsonData.schematics)) {
 		if (!Array.isArray(items) || items.length === 0) continue;
 		totalItems += items.length;
 
@@ -580,7 +570,6 @@ function initializeChecklist() {
 			const itemId = normalizeKey(item.name);
 			const itemName = item.name || '';
 			const itemDiv = document.createElement('div');
-
 			itemDiv.className = 'item infobox';
 			itemDiv.dataset.searchText = `${item.name || ''} ${
 				item.location || ''
@@ -593,9 +582,7 @@ function initializeChecklist() {
 			const checkbox = document.createElement('input');
 			checkbox.type = 'checkbox';
 			checkbox.className = 'item-checkbox';
-
 			checkbox.id = `${catKey}-${itemId}`;
-
 			checkbox.dataset.key = itemId;
 			checkbox.checked = !!checklistData[itemId];
 			checkbox.onchange = () => {
@@ -612,11 +599,9 @@ function initializeChecklist() {
 				updateStats();
 				updateCategoryCount(catKey);
 				saveToStorage();
-
 				showToast(
 					checkbox.checked ? `Marked ${itemName}` : `Unmarked ${itemName}`
 				);
-
 				applyHideCheckedSetting();
 			};
 
@@ -640,61 +625,114 @@ function initializeChecklist() {
 
 			const nameDiv = document.createElement('div');
 			nameDiv.className = 'item-name';
-
 			let nameHtml = '';
-			const safeName = item.name || '';
 			if (item.url && typeof item.url === 'string' && item.url.trim() !== '') {
-				const safeUrl = item.url.trim();
-				nameHtml = `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeName}</a>`;
+				nameHtml = `<a href="${item.url.trim()}" target="_blank" rel="noopener noreferrer">${itemName}</a>`;
 			} else {
-				nameHtml = safeName;
+				nameHtml = itemName;
 			}
 			nameDiv.innerHTML = nameHtml;
+			infoDiv.appendChild(nameDiv);
+
 			const locationDiv = document.createElement('div');
 			locationDiv.className = 'item-location';
 
-			let iconSrc = null;
-			let iconAlt = 'Location';
-
-			if (item.locationType && typeof item.locationType === 'string') {
-				const match = Object.values(locationIcons).find(
-					(icon) =>
-						icon.name &&
-						icon.name.trim().toLowerCase() ===
-							item.locationType.trim().toLowerCase()
-				);
-				if (match && match.image) {
-					iconSrc = IMAGE_PATH_PREFIX + '/' + match.image;
-					iconAlt = match.name;
+			item.locationData = (item.location || []).map((locStr) => {
+				const match = locStr.match(/<loc>(.*?)<\/loc>/);
+				if (match) {
+					const locName = match[1].trim();
+					const extraText = locStr.replace(match[0], '').trim();
+					let found = null;
+					let groupName = null;
+					for (const group in jsonData.locations) {
+						const arr = jsonData.locations[group];
+						found = arr.find(
+							(l) => l.location.trim().toLowerCase() === locName.toLowerCase()
+						);
+						if (found) {
+							groupName = group;
+							break;
+						}
+					}
+					return {
+						location: locName,
+						url: found?.url || null,
+						locationType: found?.locationType || null,
+						group: groupName,
+						extraText: extraText || null,
+					};
+				} else {
+					return {
+						location: locStr.trim(),
+						url: null,
+						locationType: null,
+						group: null,
+						extraText: null,
+					};
 				}
-			}
+			});
 
-			if (iconSrc) {
-				const iconImg = document.createElement('img');
-				iconImg.src = iconSrc;
-				iconImg.alt = iconAlt;
-				iconImg.className = 'location-icon';
-				locationDiv.appendChild(iconImg);
-			} else {
-				// Use fallback emoji
-				const fallback = document.createElement('span');
-				fallback.textContent = '📍';
-				fallback.className = 'location-fallback';
-				locationDiv.appendChild(fallback);
-			}
+			item.locationData.forEach((loc) => {
+				if (!loc) return;
+				const locWrapper = document.createElement('div');
+				locWrapper.className = 'item-location-entry';
 
-			// Add the location text
-			const locationText = document.createTextNode(` ${item.location || ''}`);
-			locationDiv.appendChild(locationText);
+				let iconSrc = null;
+				let iconAlt = 'Location';
+				if (loc.locationType && jsonData.locationIcons) {
+					const icon = Object.values(jsonData.locationIcons).find(
+						(i) =>
+							i.name &&
+							i.name.trim().toLowerCase() ===
+								loc.locationType.trim().toLowerCase()
+					);
+					if (icon && icon.image) {
+						iconSrc = IMAGE_PATH_PREFIX + '/' + icon.image;
+						iconAlt = icon.name;
+					}
+				}
 
-			infoDiv.appendChild(nameDiv);
+				if (iconSrc) {
+					const iconImg = document.createElement('img');
+					iconImg.src = iconSrc;
+					iconImg.alt = iconAlt;
+					iconImg.className = 'location-icon';
+					locWrapper.appendChild(iconImg);
+				} else {
+					const fallback = document.createElement('span');
+					fallback.textContent = '📍';
+					fallback.className = 'location-fallback';
+					locWrapper.appendChild(fallback);
+				}
+
+				if (loc.url) {
+					const link = document.createElement('a');
+					link.href = loc.url;
+					link.target = '_blank';
+					link.rel = 'noopener noreferrer';
+					link.textContent = loc.location;
+					locWrapper.appendChild(link);
+				} else {
+					const textNode = document.createTextNode(loc.location);
+					locWrapper.appendChild(textNode);
+				}
+
+				locationDiv.title = loc?.group || 'Unknown location';
+
+				if (loc.extraText) {
+					const extraNode = document.createTextNode(` ${loc.extraText}`);
+					locWrapper.appendChild(extraNode);
+				}
+
+				locationDiv.appendChild(locWrapper);
+			});
+
 			infoDiv.appendChild(locationDiv);
 
 			itemDiv.tabIndex = 0;
 			itemDiv.addEventListener('click', (ev) => {
 				if (ev.target.closest('a')) return;
 				checkbox.checked = !checkbox.checked;
-
 				checkbox.dispatchEvent(new Event('change', { bubbles: true }));
 			});
 			itemDiv.addEventListener('keydown', (ev) => {
@@ -726,7 +764,11 @@ function initializeChecklist() {
 	applyHideCheckedSetting();
 }
 
-Promise.all([loadSchematics(), loadLocationIcons()]).then(() => {
+Promise.all([
+	loadJsonIntoGlobal('data/location_icons.json', 'locationIcons'),
+	loadJsonIntoGlobal('data/schematics.json', 'schematics'),
+	loadJsonIntoGlobal('data/locations.json', 'locations'),
+]).then(() => {
 	try {
 		const raw = localStorage.getItem(STORAGE_KEY);
 		checklistData = raw ? JSON.parse(raw) || {} : {};
