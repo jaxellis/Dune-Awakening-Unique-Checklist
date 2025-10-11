@@ -676,6 +676,7 @@ function initializeChecklist() {
 				if (!loc) return;
 				const locWrapper = document.createElement('div');
 				locWrapper.className = 'item-location-entry';
+				locWrapper.title = loc?.group || 'Unknown location';
 
 				let iconSrc = null;
 				let iconAlt = 'Location';
@@ -716,8 +717,6 @@ function initializeChecklist() {
 					const textNode = document.createTextNode(loc.location);
 					locWrapper.appendChild(textNode);
 				}
-
-				locationDiv.title = loc?.group || 'Unknown location';
 
 				if (loc.extraText) {
 					const extraNode = document.createTextNode(` ${loc.extraText}`);
