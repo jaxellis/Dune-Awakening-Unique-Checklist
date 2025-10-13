@@ -5,7 +5,6 @@ import {
 	redoStack,
 	saveToStorage,
 } from './data_34f204dc7050c01b.js';
-
 import {
 	updateItem,
 	updateCategoryCount,
@@ -13,58 +12,59 @@ import {
 	applyHideCheckedSetting,
 	toggleAll,
 } from './dom_bb236832e7e3496a.js';
-
 import { showToast } from './toast_59302154e35eb304.js';
 
-export function pushUndoSnapshot(meta = null) {
+const clone = (obj) => structuredClone(obj ?? {});
+
+export const pushUndoSnapshot = (meta = null) => {
 	try {
-		const snap = JSON.parse(JSON.stringify(checklistData || {}));
-		undoStack.push({ snap, meta });
+		const snap = clone(checklistData);
+		const metaClone = meta ? clone(meta) : null;
+		undoStack.push({ snap, meta: metaClone });
 
 		redoStack.length = 0;
 		if (undoStack.length > UNDO_STACK_MAX) undoStack.shift();
 		updateUndoButtonState();
 		updateRedoButtonState();
-	} catch (e) {
-		console.error('Failed to push undo snapshot', e);
+	} catch (err) {
+		console.error('Failed to push undo snapshot', err);
 	}
-}
+};
 
-export function updateUndoButtonState() {
+export const updateUndoButtonState = () => {
 	const btn = document.getElementById('undoBtn');
 	if (!btn) return;
 	btn.disabled = undoStack.length === 0;
-}
+};
 
-export function updateRedoButtonState() {
+export const updateRedoButtonState = () => {
 	const btn = document.getElementById('redoBtn');
 	if (!btn) return;
 	btn.disabled = redoStack.length === 0;
-}
+};
 
-export function undoLast() {
-	if (undoStack.length === 0) return;
+export const undoLast = () => {
+	if (!undoStack.length) return;
+
 	try {
 		try {
-			const currentSnap = JSON.parse(JSON.stringify(checklistData || {}));
+			const currentSnap = clone(checklistData);
 			redoStack.push({ snap: currentSnap, meta: { type: 'undo-redo' } });
 			if (redoStack.length > UNDO_STACK_MAX) redoStack.shift();
-		} catch (e) {
-			console.error('Failed to push redo snapshot', e);
+		} catch (err) {
+			console.error('Failed to push redo snapshot', err);
 		}
 
 		const entry = undoStack.pop();
 		if (!entry) return;
-		const last = entry.snap || {};
-		const meta = entry.meta || null;
 
-		for (const key in checklistData) {
-			delete checklistData[key];
-		}
+		const { snap: last = {}, meta = null } = entry;
+
+		Object.keys(checklistData).forEach((k) => delete checklistData[k]);
 		Object.assign(checklistData, last);
 
 		document.querySelectorAll('.item-checkbox').forEach((checkbox) => {
-			const key = checkbox.dataset.key || checkbox.id;
+			const key = checkbox.dataset.key ?? checkbox.id;
 			checkbox.checked = !!checklistData[key];
 			const itemDiv = checkbox.closest('.item');
 			updateItem(itemDiv, checkbox.checked);
@@ -73,75 +73,88 @@ export function undoLast() {
 		document
 			.querySelectorAll('.category')
 			.forEach((cat) => updateCategoryCount(cat.dataset.category));
+
 		updateStats();
 		saveToStorage();
 		updateUndoButtonState();
-		if (meta && meta?.type) {
-			let action = '';
-			switch (meta.type) {
-				case 'item-toggle':
-					action = meta.to ? 'Unmarked' : 'Remarked';
-					showToast(`${action} ${meta?.name}`);
-					break;
-				case 'bulk-toggle':
-					action = meta.to ? 'Checked all items' : 'Unchecked all items';
-					showToast(`Undo: ${action}`);
-					break;
-				case 'clear':
-					showToast('Undo: progress restored');
-					break;
-				case 'import':
-					showToast('Undo: previous progress restored');
-					break;
-				default:
-					showToast('Undo: previous state restored');
-					break;
-			}
-		} else {
-			showToast('Undo: previous state restored');
-		}
+
+		const actionMessage = (() => {
+			if (!meta?.type) return 'Undo: previous state restored';
+
+			const messages = {
+				'item-toggle': `${meta.to ? 'Unmarked' : 'Remarked'} ${meta.name}`,
+				'bulk-toggle': `Undo: ${
+					meta.to ? 'Checked all items' : 'Unchecked all items'
+				}`,
+				clear: 'Undo: progress restored',
+				import: 'Undo: previous progress restored',
+			};
+
+			return messages[meta.type] ?? 'Undo: previous state restored';
+		})();
+
+		showToast(actionMessage);
 		updateRedoButtonState();
 		applyHideCheckedSetting();
-	} catch (e) {
-		console.error('Failed to undo last action', e);
+	} catch (err) {
+		console.error('Failed to undo last action', err);
 	}
-}
+};
 
-export function redoLast() {
-	if (redoStack.length === 0) return;
+export const redoLast = () => {
+	if (!redoStack.length) return;
+
 	try {
 		try {
-			const currentSnap = JSON.parse(JSON.stringify(checklistData || {}));
+			const currentSnap = clone(checklistData);
 			undoStack.push({ snap: currentSnap, meta: { type: 'redo-undo' } });
 			if (undoStack.length > UNDO_STACK_MAX) undoStack.shift();
-		} catch (e) {
-			console.error('Failed to push undo snapshot for redo', e);
+		} catch (err) {
+			console.error('Failed to push undo snapshot for redo', err);
 		}
 
 		const entry = redoStack.pop();
 		if (!entry) return;
-		const next = entry.snap || {};
-		for (const key in checklistData) {
-			delete checklistData[key];
-		}
+
+		const { snap: next = {}, meta = null } = entry;
+
+		Object.keys(checklistData).forEach((k) => delete checklistData[k]);
 		Object.assign(checklistData, next);
 
 		document.querySelectorAll('.item-checkbox').forEach((checkbox) => {
-			const key = checkbox.dataset.key || checkbox.id;
+			const key = checkbox.dataset.key ?? checkbox.id;
 			checkbox.checked = !!checklistData[key];
 			const itemDiv = checkbox.closest('.item');
 			updateItem(itemDiv, checkbox.checked);
 		});
+
 		document
 			.querySelectorAll('.category')
 			.forEach((cat) => updateCategoryCount(cat.dataset.category));
+
 		updateStats();
 		saveToStorage();
 		updateUndoButtonState();
 		updateRedoButtonState();
-		showToast('Redo applied');
+
+		const actionMessage = (() => {
+			if (!meta?.type) return 'Redo applied';
+
+			const messages = {
+				'item-toggle': `${meta.to ? 'Rechecked' : 'Unchecked'} ${meta.name}`,
+				'bulk-toggle': `Redo: ${
+					meta.to ? 'Checked all items' : 'Unchecked all items'
+				}`,
+				clear: 'Redo: progress cleared again',
+				import: 'Redo: imported progress again',
+			};
+
+			return messages[meta.type] ?? 'Redo applied';
+		})();
+
+		showToast(actionMessage);
 		applyHideCheckedSetting();
-	} catch (e) {
-		console.error('Failed to redo last action', e);
+	} catch (err) {
+		console.error('Failed to redo last action', err);
 	}
-}
+};
