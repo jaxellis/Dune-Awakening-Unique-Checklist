@@ -80,7 +80,7 @@
             ],
             "location": [
                 "<loc>Eastern Safeway</loc>",
-                "<loc>Griffin's Reach Trading Post</loc> Trader"
+                "<loc>Griffin's Reach Tradepost</loc> Trader"
             ],
             "url": "https://awakening.wiki/Hajra_Literjon_Mk1",
             "image": "cf61773ed15c89b03faf1cedbb025abe4c6bcdf9629137d8e4674c8dec0571ba.png"
@@ -1250,18 +1250,6 @@
     ],
     "Aluminum": [
         {
-            "name": "Clapper_Mk4",
-            "types": [
-                "Tool",
-                "Thumper"
-            ],
-            "location": [
-                "Mysa Tarill"
-            ],
-            "url": "https://awakening.wiki/Clapper_Mk4",
-            "image": "10f6ede9e876fbb7bdcbf5a818e3970f868d23a8e7fb8948992ec5787d7f7f96.png"
-        },
-        {
             "name": "Abulurd's Rapture",
             "types": [
                 "Weapon",
@@ -1292,7 +1280,10 @@
                 "Land"
             ],
             "location": [
-                ""
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Southern Comms</loc>"
             ],
             "url": "https://awakening.wiki/Bigger_Buggy_Boot_Mk4",
             "image": "af5f88491fa0368ac4713ccbc2952c9a96f028724b8ee27fd33ae4aee5ecc1e7.png"
@@ -1304,7 +1295,11 @@
                 "Land"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Stonestep Village</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Bluddshot_Buggy_Engine_Mk4",
             "image": "7fddabc50f8e2cd6204fa882d331bfd2f1a9dade0e59b2908e27374ac5e08ecf.png"
@@ -1316,10 +1311,23 @@
                 "Dew Reaper"
             ],
             "location": [
+                "<loc>Imperial Testing Station No. 142</loc>",
                 "<loc>Imperial Testing Station No. 163</loc>"
             ],
             "url": "https://awakening.wiki/Buoyant_Reaper_Mk4",
             "image": "29d3adac5d812e9e9d54fb6a8b4c464072d830a2aa6dac903e9018f7171b5e1c.png"
+        },
+        {
+            "name": "Clapper Mk4",
+            "types": [
+                "Tool",
+                "Thumper"
+            ],
+            "location": [
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Clapper_Mk4",
+            "image": "10f6ede9e876fbb7bdcbf5a818e3970f868d23a8e7fb8948992ec5787d7f7f96.png"
         },
         {
             "name": "Collapsible Dew Reaper Mk4",
@@ -1328,7 +1336,8 @@
                 "Dew Reaper"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Collapsible_Dew_Reaper_Mk4",
             "image": "718c05cd9d21b5409d83ec964291ba9ba2c89c0b028c11b5c913d0960c022db9.png"
@@ -1340,7 +1349,11 @@
                 "Compactor"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stonestep Village</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Compact_Compactor_Mk4",
             "image": "a9a07b1b69371ea0a210e2134bca4232343d5a3df032f49e6bbeb9732a5177cd.png"
@@ -1352,7 +1365,8 @@
                 "Light"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Compression-Stim_Leggings",
             "image": "38b355286dcd1cffede97e1ce5115d86ed004cc591e937a12124ab81893f775c.png"
@@ -1364,7 +1378,9 @@
                 "Melee"
             ],
             "location": [
-                ""
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
             ],
             "url": "https://awakening.wiki/Denira%27s_Gift",
             "image": "6ffbd3d4a285f509b9cec7e3bb261d4c1b5bf016df1b0006cfe5fb9e46cfa8e4.png"
@@ -1376,7 +1392,11 @@
                 "Ranged"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stonestep Village</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Eviscerator",
             "image": "120d21d29564d86b00882bedb25a580e453a13f0ffd4fa7a783eb17b9c9c0171.png"
@@ -1388,7 +1408,8 @@
                 "Ranged"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 60</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "Mission: 'Payload: Smokescreen'"
             ],
             "url": "https://awakening.wiki/Experimental_Vulcan_GAU-94",
             "image": "7ca8101c64bc76e19a5fef7831b19649618d1e10fe3548a98ca23b777c5e897d.png"
@@ -1400,7 +1421,10 @@
                 "Fluid Extractor"
             ],
             "location": [
-                ""
+                "<loc>Passage of Artemis</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>Southern Comms</loc>",
+                "<loc>The Beast's Claw</loc>"
             ],
             "url": "https://awakening.wiki/Filter_Extractor_Mk4",
             "image": "160a6803351911272c5a7d929bcd4d371aadbdbc5a3bd6918c0b151410c6f2ec.png"
@@ -1424,7 +1448,10 @@
                 "Land"
             ],
             "location": [
-                ""
+                "<loc>Passage of Artemis</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>Southern Comms</loc>",
+                "<loc>The Beast's Claw</loc>"
             ],
             "url": "https://awakening.wiki/Focused_Buggy_Cutteray_Mk4",
             "image": "a2a4723cea0cb2f50a592af8efbc9656ac7fbf632eb17984bf13818d06ba2818.png"
@@ -1436,7 +1463,11 @@
                 "Water Container"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stepstone Cavern</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Hajra_Literjon_Mk4",
             "image": "cf61773ed15c89b03faf1cedbb025abe4c6bcdf9629137d8e4674c8dec0571ba.png"
@@ -1448,7 +1479,7 @@
                 "Ranged"
             ],
             "location": [
-                ""
+                "<loc>Sentinel City</loc>"
             ],
             "url": "https://awakening.wiki/House_Burst_Drillshot",
             "image": "ccfe0c470cec3fe907ffe2a2d40ce422391944c2e95a04499e19c90a2734c3ec.png"
@@ -1460,7 +1491,10 @@
                 "Ranged"
             ],
             "location": [
-                ""
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>",
+                "Mission: 'Cleanup Detail: The Specialists'"
             ],
             "url": "https://awakening.wiki/House_Disruptor_Pistol",
             "image": "304b0d0e871d1407f8f5ae6c11cb2fcdec02e2a47662734cd42e3abc566ce835.png"
@@ -1472,7 +1506,8 @@
                 "Light"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Idaho_Softstep_Boots",
             "image": "5e6082da2ef73443e3feeb53f600b6749efe0589cf8f1bf5cb5e57614e1d476d.png"
@@ -1484,6 +1519,7 @@
                 "Light"
             ],
             "location": [
+                "<loc>Imperial Testing Station No. 142</loc>",
                 "<loc>Imperial Testing Station No. 163</loc>"
             ],
             "url": "https://awakening.wiki/Improved_Reaper_Gloves",
@@ -1496,7 +1532,11 @@
                 "Light"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stepstone Cavern</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Improved_Suspensor_Jacket",
             "image": "41bc69ad4ce4aa71bd7aa4fbd344f378055a4790ed4d16e0887d7a5b2f46906e.png"
@@ -1508,6 +1548,7 @@
                 "Ranged"
             ],
             "location": [
+                "<loc>Imperial Testing Station No. 142</loc>",
                 "<loc>Imperial Testing Station No. 163</loc>"
             ],
             "url": "https://awakening.wiki/Ironwatch_Special",
@@ -1520,7 +1561,10 @@
                 "Ranged"
             ],
             "location": [
-                ""
+                "<loc>Passage of Artemis</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>Southern Comms</loc>",
+                "<loc>The Beast's Claw</loc>"
             ],
             "url": "https://awakening.wiki/Long_Shot",
             "image": "e97a10e34194f815801c02c8a954abb46a619f0c36a58b4841bdeca72da807bc.png"
@@ -1532,7 +1576,9 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 142</loc>"
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>",
+                "Mission: 'The Cult: Crysknife Bounty'"
             ],
             "url": "https://awakening.wiki/Maraqeb_Stillsuit_Boots",
             "image": "80c85d1c2d1c1a7e7d9ee4857e51cd0dbf7e0dc6d3a8151174ef43a87d0cf1c5.png"
@@ -1544,7 +1590,9 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 142</loc>"
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>",
+                "Mission: 'The Cult: Crysknife Bounty'"
             ],
             "url": "https://awakening.wiki/Maraqeb_Stillsuit_Garment",
             "image": "f406cccb7720d9453ad1f2b2da15ca170394d9ebae0683e70d26e54edb0bef48.png"
@@ -1556,7 +1604,9 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 142</loc>"
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>",
+                "Mission: 'The Cult: Crysknife Bounty'"
             ],
             "url": "https://awakening.wiki/Maraqeb_Stillsuit_Gloves",
             "image": "b97045374867c83e802ac054109f4c200fc7b8701efabbddaf31228c8df5d6d8.png"
@@ -1568,7 +1618,9 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 142</loc>"
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>",
+                "Mission: 'The Cult: Crysknife Bounty'"
             ],
             "url": "https://awakening.wiki/Maraqeb_Stillsuit_Mask",
             "image": "2d26c0d0940a1ca764f8498969651804c90f64834b9d979460d265c45420e3ce.png"
@@ -1580,7 +1632,11 @@
                 "Light"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stepstone Cavern</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Miner%27s_Blessing",
             "image": "c82b3f7aec71f19b5c931ef2f388301ed55acca7662216f654a6f9210bb7c5b0.png"
@@ -1592,6 +1648,7 @@
                 "Land"
             ],
             "location": [
+                "<loc>Imperial Testing Station No. 142</loc>",
                 "<loc>Imperial Testing Station No. 163</loc>"
             ],
             "url": "https://awakening.wiki/Mohandis_Sandbike_Engine_Mk4",
@@ -1604,7 +1661,11 @@
                 "Land"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 71</loc>"
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stepstone Cavern</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Night_Rider_Sandbike_Boost_Mk4",
             "image": "052903530b49e1331d750911a3772784d1710a7d949938f342848cd3425d1403.png"
@@ -1616,10 +1677,53 @@
                 "Power Pack"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 142</loc>"
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>The Crossroads Tradepost</loc> trader Zoe"
             ],
             "url": "https://awakening.wiki/Old_Sparky_Mk4",
             "image": "63307bbdd5fb299cb44d0ae0697b338cceb95c129e99d97a7ce626ade212984c.png"
+        },
+        {
+            "name": "Pipecleaner",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stepstone Cavern</loc>",
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://awakening.wiki/Pipecleaner",
+            "image": "368d99274d5081254aed485b74976b49049d152a4bb84e040188af4cb8aeb5ac.png"
+        },
+        {
+            "name": "Poison Mist",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "<loc>Sentinel City</loc>",
+                "<loc>Batigh Grotto</loc>"
+            ],
+            "url": "https://awakening.wiki/Poison_Mist",
+            "image": "cb99e8d1fa9cc0ebe36482df03bad78ab205017d2a71bd8f73e82204764d5f25.png"
+        },
+        {
+            "name": "Power Gauntlets",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Power_Gauntlets",
+            "image": "c73e96cf35e3abc746ed7fee4dfe702b4940c056607c9d5f7de220723690a206.png"
         }
     ],
     "Duraluminum": [
@@ -1846,7 +1950,7 @@
                 "Light"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Chosen_Boots",
             "image": "a26ce0f2b859910c162cce811eaf8c3aa96380ed5b8f553e63d7d58dbaafaa8d.png"
@@ -1858,7 +1962,7 @@
                 "Light"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Chosen_Chestplate",
             "image": "27bcddc42cdfffb309a737f913f47e72a303e649a94d70b0aa3823d51bb85b26.png"
@@ -1870,7 +1974,7 @@
                 "Light"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Chosen_Gauntlets",
             "image": "6489236f93971c314700489601e3293cff3678410e60e9c69f6eccb4a248219e.png"
@@ -1882,7 +1986,7 @@
                 "Light"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Chosen_Helmet",
             "image": "021679d79d5ea437257f662dda352aad02961c01fb21e9c7a4a89a9b3cfde563.png"
@@ -1894,7 +1998,7 @@
                 "Light"
             ],
             "location": [
-                "Mysa Tarill"
+                "<loc>Mysa Tarill</loc>"
             ],
             "url": "https://awakening.wiki/Chosen_Pants",
             "image": "f46a0548c6106137326810bc68998cb4f82735a7bce30ddfe057bc2ea8afb726.png"
