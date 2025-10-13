@@ -5,43 +5,36 @@ import {
 	STORAGE_KEY,
 } from './constants_57559eec849b4e2f.js';
 
-export let activeFilters = {
-	main: {},
-	sub: {},
-};
-export let appSettings = {
-	hideChecked: false,
-};
+export let activeFilters = { main: {}, sub: {} };
+export let appSettings = { hideChecked: false };
 export let checklistData = {};
 export let collapsedCategories = new Set();
-export let jsonData = {
-	schematics: {},
-	locationIcons: {},
-	locations: {},
-};
+export let jsonData = { schematics: {}, locationIcons: {}, locations: {} };
 
 export let undoStack = [];
 export let redoStack = [];
 
-export function saveFilters() {
+export const saveFilters = () => {
 	try {
-		localStorage.setItem(FILTERS_KEY, JSON.stringify(activeFilters));
-	} catch (e) {
-		console.error('Failed to save filters', e);
+		globalThis.localStorage?.setItem(
+			FILTERS_KEY,
+			JSON.stringify(activeFilters)
+		);
+	} catch {
+		console.error('Failed to save filters');
 	}
-}
+};
 
-export function loadFilters() {
+export const loadFilters = () => {
 	try {
-		const raw = localStorage.getItem(FILTERS_KEY);
-		const parsed = raw ? JSON.parse(raw) || {} : {};
-		activeFilters = Object.assign(activeFilters, parsed);
-	} catch (e) {
-		console.error('Failed to load filters', e);
+		const raw = globalThis.localStorage?.getItem(FILTERS_KEY);
+		activeFilters = { ...activeFilters, ...(raw ? JSON.parse(raw) ?? {} : {}) };
+	} catch {
+		console.error('Failed to load filters');
 	}
-}
+};
 
-export async function loadJsonIntoGlobal(filePath, key) {
+export const loadJsonIntoGlobal = async (filePath, key) => {
 	try {
 		const res = await fetch(filePath, { cache: 'no-cache' });
 		if (!res.ok) throw new Error(`Failed to fetch ${filePath}: ${res.status}`);
@@ -50,52 +43,53 @@ export async function loadJsonIntoGlobal(filePath, key) {
 		console.error(`Error loading ${filePath}`, err);
 		jsonData[key] = {};
 	}
-}
+};
 
-export function saveToStorage() {
+export const saveToStorage = () => {
 	try {
-		localStorage.setItem(STORAGE_KEY, JSON.stringify(checklistData));
-	} catch (e) {
-		console.error('Failed to save progress to localStorage', e);
+		globalThis.localStorage?.setItem(
+			STORAGE_KEY,
+			JSON.stringify(checklistData)
+		);
+	} catch {
+		console.error('Failed to save progress to localStorage');
 	}
-}
+};
 
-export function saveSettings() {
+export const saveSettings = () => {
 	try {
-		localStorage.setItem(SETTINGS_KEY, JSON.stringify(appSettings));
-	} catch (e) {
-		console.error('Failed to save settings', e);
+		globalThis.localStorage?.setItem(SETTINGS_KEY, JSON.stringify(appSettings));
+	} catch {
+		console.error('Failed to save settings');
 	}
-}
+};
 
-export function loadSettings() {
+export const loadSettings = () => {
 	try {
-		const raw = localStorage.getItem(SETTINGS_KEY);
-		const parsed = raw ? JSON.parse(raw) || {} : {};
-		appSettings = Object.assign(appSettings, parsed);
-	} catch (e) {
-		console.error('Failed to load settings', e);
+		const raw = globalThis.localStorage?.getItem(SETTINGS_KEY);
+		appSettings = { ...appSettings, ...(raw ? JSON.parse(raw) ?? {} : {}) };
+	} catch {
+		console.error('Failed to load settings');
 	}
-}
+};
 
-export function saveCollapsedCategories() {
+export const saveCollapsedCategories = () => {
 	try {
-		localStorage.setItem(
+		globalThis.localStorage?.setItem(
 			COLLAPSE_KEY,
 			JSON.stringify([...collapsedCategories])
 		);
-	} catch (e) {
-		console.error('Failed to save collapsed categories', e);
+	} catch {
+		console.error('Failed to save collapsed categories');
 	}
-}
+};
 
-export function loadCollapsedCategories() {
+export const loadCollapsedCategories = () => {
 	try {
-		const raw = localStorage.getItem(COLLAPSE_KEY);
-		if (raw) collapsedCategories = new Set(JSON.parse(raw));
-		else collapsedCategories = new Set();
-	} catch (e) {
-		console.error('Failed to load collapsed categories', e);
+		const raw = globalThis.localStorage?.getItem(COLLAPSE_KEY);
+		collapsedCategories = raw ? new Set(JSON.parse(raw)) : new Set();
+	} catch {
+		console.error('Failed to load collapsed categories');
 		collapsedCategories = new Set();
 	}
-}
+};
