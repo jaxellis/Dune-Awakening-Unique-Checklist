@@ -22,13 +22,14 @@
 			rel="icon"
 			href="https://www.google.com/s2/favicons?domain=duneawakening.com&sz=32"
 		/>
-		<script type="module" src="scripts/main_3483bafbdd229286.js"></script>
+		<script type="module" src="scripts/main_3b757922d1625886.js"></script>
 		<script type="module" src="scripts/constants_9fe2dbbb9bdba702.js"></script>
 		<script type="module" src="scripts/data_09b4d589a60ee701.js"></script>
-		<script type="module" src="scripts/dom_dfc14ecc1e2747e9.js"></script>
-		<script type="module" src="scripts/filters_c39c898f78bd87c0.js"></script>
+		<script type="module" src="scripts/dom_aa845de8a4ff3dc1.js"></script>
+		<script type="module" src="scripts/filters_f085c58d51acf2e1.js"></script>
 		<script type="module" src="scripts/toast_b747dc57bf6fa14f.js"></script>
-		<script type="module" src="scripts/undoRedo_2993a085f053c7fe.js"></script>
+		<script type="module" src="scripts/undoRedo_8b0784dd4bd2e071.js"></script>
+		<script type="module" src="scripts/search_8b187eafffcf7775.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -61,7 +62,7 @@
 					type="text"
 					class="search-box"
 					placeholder="Search schematics..."
-					oninput="filterItems(this.value)"
+					oninput="onSearchInput(this.value)"
 				/>
 				<button class="control-btn" id="undoBtn" onclick="undoLast()" disabled>
 					Undo
