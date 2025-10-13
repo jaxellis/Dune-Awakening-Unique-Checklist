@@ -24,7 +24,7 @@
 
 .locations-sidebar {
 	position: fixed;
-	left: 5px;
+	left: 0;
 	top: 0;
 	height: 100%;
 	width: 0;
