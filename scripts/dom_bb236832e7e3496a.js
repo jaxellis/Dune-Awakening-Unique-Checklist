@@ -10,6 +10,7 @@ import {
 	saveSettings,
 	loadCollapsedCategories,
 	activeFilters,
+	saveFilters,
 } from './data_34f204dc7050c01b.js';
 
 import {
