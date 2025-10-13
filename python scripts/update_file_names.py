@@ -15,8 +15,16 @@ def hash_and_rename_files(path: Path, extension: str) -> dict:
     """
     mapping = {}
     for file in path.glob(f"*.{extension}"):
-        new_name: str = hashlib.sha256(file.read_bytes()).hexdigest() + f".{extension}"
+        new_name: str = (
+            file.name.split(".")[0].split("_")[0]
+            + "_"
+            + hashlib.sha256(file.read_bytes()).hexdigest()
+            + f".{extension}"
+        )
         new_path: Path = file.parent / new_name
+        if file.name == new_name:
+            print(f"Skipping {file.name} - already hashed")
+            continue
         print(f"Renaming {file.name} -> {new_name}")
         file.rename(new_path)
         mapping[file.name] = new_name
