@@ -1,7 +1,7 @@
 let toastTimer = null;
 let fadeTimer = null;
 
-export function showToast(message, ms = 2200) {
+export const showToast = (message, ms = 2200) => {
 	const el = document.getElementById('toast');
 	if (!el) return;
 
@@ -17,4 +17,4 @@ export function showToast(message, ms = 2200) {
 		el.classList.remove('show');
 		fadeTimer = setTimeout(() => el.classList.add('hidden'), 220);
 	}, ms);
-}
+};
