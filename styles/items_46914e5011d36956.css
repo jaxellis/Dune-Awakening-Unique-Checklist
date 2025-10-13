@@ -125,6 +125,8 @@
 	border-radius: 12px;
 	overflow: hidden;
 	min-height: 280px;
+	position: relative;
+	cursor: pointer;
 	display: flex;
 }
 
