@@ -1,0 +1,23 @@
+/* Base Styles */
+.hidden {
+	display: none !important;
+}
+
+.hidden-by-setting {
+	display: none !important;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background: linear-gradient(135deg, #1a1a2e 0%, #0f0f23 100%);
+	background-color: #1a1a2e;
+	color: #e8e8e8;
+	min-height: 100vh;
+	padding: 20px;
+}

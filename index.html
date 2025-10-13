@@ -4,17 +4,33 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Dune Awakening - Unique Schematics Checklist</title>
-		<link rel="stylesheet" href="styles/f4799fe643f81b61ea9ce9599e23ff89767bbae45692eac5e57a3918184eb42d.css" />
+
+		<link rel="stylesheet" href="styles/base_5c074edd431ffaa1420af1875e7fadee179d1cface0bc7653c6989d2b266db13.css">
+		<link rel="stylesheet" href="styles/categories_7722d511beede77c26fc1f9aec97fbd716fb46a6ca94deb0f4c4f00739d94a81.css">
+		<link rel="stylesheet" href="styles/controls_0ebed51e1e8ccf0f4bd41027537c1ef07009a49ce049ea84c54947aea00ffbe3.css">
+		<link rel="stylesheet" href="styles/footer_d83b867813458a562950e8dffce7c7e7a68a909dd130016844f1eafef890fd9b.css">
+		<link rel="stylesheet" href="styles/forms_7c972648adcdb8fdd97ef0cdee518c080042feabbfb6f75828edffb67bb3437c.css">
+		<link rel="stylesheet" href="styles/header_90a8daed6f27f0b986b61f58acb6dba4ed0284f5e984851aa4670ef0d37080f8.css">
+		<link rel="stylesheet" href="styles/items_b733952c393f59084c59d66c9d8c3c709fc0c46dbcceb2bbe1ea58576ef3eb0c.css">
+		<link rel="stylesheet" href="styles/layout_0de26466f0f2084bfaac8d68612bb6b599bcc2426ee4dfe186c27eb45d3b8828.css">
+		<link rel="stylesheet" href="styles/sidebar_d01bc7321d955ad718f664609295e8d1d8bdee5e0f4e863264d58a1c1f5ba549.css">
+		<link rel="stylesheet" href="styles/scrollbar_b88a2726499782d75bc20f291dc0fb84fd7d9158a45ac741e4bb6873405f7420.css">
+		<link rel="stylesheet" href="styles/sidebar_d01bc7321d955ad718f664609295e8d1d8bdee5e0f4e863264d58a1c1f5ba549.css">
+		<link rel="stylesheet" href="styles/stats_35daa623be1e0be369ceadc56d2c74ac97554fcaa90ebf9caa2b2449a4f41e93.css">
+		<link rel="stylesheet" href="styles/toast_c16e4983634fb00863af73452eebdde603bda7cf0b17748f0062c70dd94813f7.css">
+
 		<link
 			rel="icon"
 			href="https://www.google.com/s2/favicons?domain=duneawakening.com&sz=32"
 		/>
-		<script src="scripts/bb37c318881d3ee4c163a63f8c36ce990ac8b912c16a54018057cef4a50f5c49.js"></script>
+		<script src="scripts/main_a405ac7092528c3d1e006ef71a2ae9d389baadfa89a3b78125a9138e02b5b00f.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="header">
-				<h1>Dune Awakening - Unique Schematics Checklist</h1>
+				<h1>Dune Awakening</h1>
+				<h1>Unique Schematics Checklist</h1>
+
 				<div class="subtitle">Track all unique schematics across Arrakis</div>
 				<br
 				<p>
@@ -24,8 +40,9 @@
 					Use the Export/Import buttons to move progress between devices or back
 					up.
 				</p>
+				<br>
 				<p>
-					Some schematics may be missing or miscategorized. Please have patience as I finish. 
+					Finished: Copper ✅, Iron ✅, Steel ✅, Aluminum ❌, Duraluminum ❌, Plastanium ❌
 				</p>
 			</div>
 
@@ -103,6 +120,17 @@
 			></div>
 
 			<div class="footer"></div>
+		</div>
+		<button id="openLocationsSidebarBtn" class="sidebar-toggle-btn control-btn" aria-label="Open Top Farming Locations">
+			<span>Farming Locations</span>
+		</button>
+		<div class="locations-sidebar" id="locationsSidebar" aria-modal="true" role="dialog">
+			<div class="sidebar-header">
+				<h2>Farming Locations</h2>
+				<button class="close-sidebar-btn" aria-label="Close" id="closeLocationsSidebarBtn">✖</button>
+			</div>
+			<div class="sidebar-content" id="locationsList">
+			</div>
 		</div>
 	</body>
 </html>

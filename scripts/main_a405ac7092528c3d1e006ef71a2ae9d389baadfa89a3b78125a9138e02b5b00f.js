@@ -20,6 +20,93 @@ let jsonData = {
 	locations: {},
 };
 
+function getTopLocations() {
+	const locationCounts = {};
+
+	for (const items of Object.values(jsonData.schematics)) {
+		for (const item of items) {
+			if (checklistData[normalizeKey(item.name)]) continue;
+
+			if (!item.location || item.location.length === 0) continue;
+
+			for (const loc of item.location) {
+				if (!loc || loc.trim() === '') continue;
+
+				let locName;
+
+				if (loc.startsWith('NPC Camp')) {
+					const parts = loc.split('|');
+					locName = parts[0] || 'Unknown NPC Camp';
+				} else {
+					locName = loc.replace(/<\/?loc>/g, '').trim();
+				}
+
+				locationCounts[locName] = (locationCounts[locName] || 0) + 1;
+			}
+		}
+	}
+
+	// Sort locations by descending number of unmarked items
+	return Object.entries(locationCounts)
+		.sort((a, b) => b[1] - a[1])
+		.map(([location, count]) => ({ location, count }));
+}
+
+function showTopLocations() {
+	console.log('showTopLocations function called.');
+	const sidebar = document.getElementById('locationsSidebar');
+	const locationsList = document.getElementById('locationsList');
+	if (!sidebar || !locationsList) return;
+
+	const results = getTopLocations();
+
+	if (results.length === 0) {
+		locationsList.innerHTML =
+			'<p style="color: #b8b8b8; text-align: center;">All items are collected or have no locations.</p>';
+	} else {
+		locationsList.innerHTML = ''; // Clear previous results
+		// Add header for the list
+		const listHeader = document.createElement('div');
+		listHeader.className = 'location-list-header';
+		listHeader.innerHTML =
+			'<span class="location-name">Location Name</span><span class="location-count">Count</span>';
+		locationsList.appendChild(listHeader);
+
+		for (const { location, count } of results) {
+			const locationItem = document.createElement('div');
+			locationItem.className = 'location-item';
+
+			const locationName = document.createElement('span');
+			locationName.className = 'location-name';
+			locationName.textContent = location;
+
+			const itemCount = document.createElement('span');
+			itemCount.className = 'location-count';
+			itemCount.textContent = `${count}`;
+
+			locationItem.appendChild(locationName);
+			locationItem.appendChild(itemCount);
+			locationsList.appendChild(locationItem);
+		}
+	}
+
+	sidebar.classList.add('open');
+	const openLocationsSidebarBtn = document.getElementById(
+		'openLocationsSidebarBtn'
+	);
+	if (!openLocationsSidebarBtn) return; // Added null check
+	// Add event listener to close when clicking outside
+	document.addEventListener('click', (event) => {
+		if (
+			!sidebar.contains(event.target) &&
+			!openLocationsSidebarBtn.contains(event.target) &&
+			sidebar.classList.contains('open')
+		) {
+			sidebar.classList.remove('open');
+		}
+	});
+}
+
 function saveFilters() {
 	try {
 		localStorage.setItem(FILTERS_KEY, JSON.stringify(activeFilters));
@@ -195,7 +282,6 @@ function applyAllFilters() {
 	});
 }
 
-window.applyAllFilters = applyAllFilters;
 const UNDO_STACK_MAX = 20;
 let undoStack = [];
 let redoStack = [];
@@ -369,8 +455,6 @@ function toggleHideChecked() {
 		appSettings.hideChecked ? 'Hiding checked items' : 'Showing checked items'
 	);
 }
-
-window.toggleHideChecked = toggleHideChecked;
 
 function updateCategoryCount(categoryName) {
 	const category = document.querySelector(`[data-category="${categoryName}"]`);
@@ -636,6 +720,7 @@ function initializeChecklist() {
 					checkbox.checked ? `Marked ${itemName}` : `Unmarked ${itemName}`
 				);
 				applyHideCheckedSetting();
+				showTopLocations(); // Update location counts when an item is checked/unchecked
 			};
 
 			const img = document.createElement('img');
@@ -826,12 +911,6 @@ Promise.all([
 	buildFiltersUI();
 });
 
-window.toggleAll = toggleAll;
-window.clearProgress = clearProgress;
-window.exportProgress = exportProgress;
-window.importProgress = importProgress;
-window.filterItems = filterItems;
-
 function undoLast() {
 	if (undoStack.length === 0) return;
 	try {
@@ -894,7 +973,6 @@ function undoLast() {
 	}
 }
 
-window.undoLast = undoLast;
 updateUndoButtonState();
 updateRedoButtonState();
 
@@ -933,7 +1011,6 @@ function redoLast() {
 		console.error('Failed to redo last action', e);
 	}
 }
-window.redoLast = redoLast;
 
 function toggleSettings() {
 	const menu = document.getElementById('settingsMenu');
@@ -968,6 +1045,49 @@ function showToast(message, ms = 2200) {
 		setTimeout(() => el.classList.add('hidden'), 220);
 		toastTimeout = null;
 	}, ms);
+}
+
+window.applyAllFilters = applyAllFilters;
+window.toggleHideChecked = toggleHideChecked;
+window.toggleAll = toggleAll;
+window.clearProgress = clearProgress;
+window.exportProgress = exportProgress;
+window.importProgress = importProgress;
+window.filterItems = filterItems;
+window.showTopLocations = showTopLocations;
+window.redoLast = redoLast;
+window.undoLast = undoLast;
+
+document.addEventListener('DOMContentLoaded', () => {
+	const openBtn = document.getElementById('openLocationsSidebarBtn');
+	const closeBtn = document.getElementById('closeLocationsSidebarBtn');
+	const sidebar = document.getElementById('locationsSidebar');
+
+	if (openBtn) {
+		openBtn.addEventListener('click', showTopLocations);
+		console.log('Event listener for openLocationsSidebarBtn attached.');
+	}
+
+	if (closeBtn) {
+		closeBtn.addEventListener('click', closeLocationsSidebar);
+	}
+
+	// Close sidebar when clicking outside
+	document.addEventListener('click', (event) => {
+		if (
+			sidebar &&
+			openBtn &&
+			!sidebar.contains(event.target) &&
+			!openBtn.contains(event.target) &&
+			sidebar.classList.contains('open')
+		) {
+			sidebar.classList.remove('open');
+		}
+	});
+});
+
+function closeLocationsSidebar() {
+	document.getElementById('locationsSidebar')?.classList.remove('open');
 }
 
 document.addEventListener('keydown', (ev) => {

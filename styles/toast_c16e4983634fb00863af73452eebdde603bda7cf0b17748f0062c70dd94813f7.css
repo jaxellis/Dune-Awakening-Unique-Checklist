@@ -1,0 +1,20 @@
+/* Toast Styles */
+.toast {
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	background: rgba(0, 0, 0, 0.85);
+	color: #fff;
+	padding: 10px 16px;
+	border-radius: 8px;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+	font-size: 0.95em;
+	z-index: 10000;
+	opacity: 0;
+	transform: translateY(8px);
+	transition: opacity 180ms ease, transform 180ms ease;
+}
+.toast.show {
+	opacity: 1;
+	transform: translateY(0);
+}

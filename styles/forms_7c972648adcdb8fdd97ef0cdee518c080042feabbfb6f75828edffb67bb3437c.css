@@ -1,0 +1,84 @@
+/* Form Styles (Search and Filters) */
+.search-box {
+	padding: 10px 20px;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 25px;
+	color: white;
+	font-size: 1em;
+	min-width: 300px;
+}
+
+.filters {
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.filter-bar {
+	margin-top: 12px;
+	padding: 14px 18px;
+	background: rgba(20, 20, 30, 0.95);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.04);
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	justify-content: flex-start;
+	box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.filter-group {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+	background: transparent;
+}
+
+.filter-main-label,
+.filter-sub-label {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+	color: #ffd27a;
+	background: rgba(255, 165, 0, 0.03);
+	padding: 6px 10px;
+	border-radius: 12px;
+	border: 1px solid rgba(255, 165, 0, 0.06);
+	transition: background 180ms ease, transform 120ms ease;
+}
+
+.filter-main-label:hover,
+.filter-sub-label:hover {
+	background: rgba(255, 165, 0, 0.06);
+	transform: translateY(-2px);
+}
+
+.filter-main-label input,
+.filter-sub-label input {
+	width: 14px;
+	height: 14px;
+}
+
+.filter-subs {
+	padding-left: 8px;
+	display: block;
+	margin-top: 4px;
+}
+
+.filter-main-label.active,
+.filter-sub-label.active {
+	background: linear-gradient(
+		135deg,
+		rgba(255, 107, 53, 0.12),
+		rgba(255, 165, 0, 0.12)
+	);
+	box-shadow: inset 0 2px 8px rgba(255, 107, 53, 0.06);
+}
+
+.search-box::placeholder {
+	color: rgba(255, 255, 255, 0.5);
+}
