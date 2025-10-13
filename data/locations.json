@@ -1,4 +1,33 @@
 {
+    "Eastern Shield Wall": [
+        {
+            "location": "Imperial Testing Station No. 142",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460526"
+        },
+        {
+            "location": "Southern Comms",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460533"
+        }
+    ],
+    "Eastern Vermillius Gap": [
+        {
+            "location": "Coils of the Wyrm",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446928"
+        },
+        {
+            "location": "Ghanima Cavern",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446891"
+        },
+        {
+            "location": "Imperial Testing Station No. 10",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446877"
+        }
+    ],
     "Hagga Rift": [
         {
             "location": "Arctus Cavern",
@@ -144,21 +173,33 @@
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460485"
         }
     ],
-    "Eastern Vermillius Gap": [
+    "The O'odham": [
         {
-            "location": "Coils of the Wyrm",
-            "locationType": "Cave",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446928"
-        },
-        {
-            "location": "Ghanima Cavern",
-            "locationType": "Cave",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446891"
-        },
-        {
-            "location": "Imperial Testing Station No. 10",
+            "location": "Imperial Testing Station No. 71",
             "locationType": "Station",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=446877"
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460564"
+        },
+        {
+            "location": "Imperial Testing Station No. 163",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460562"
+        }
+    ],
+    "Western Shield Wall": [
+        {
+            "location": "Imperial Testing Station No. 60",
+            "locationType": "Station",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460550"
+        },
+        {
+            "location": "Passage of Artemis",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460548"
+        },
+        {
+            "location": "Sirr'asraar Vault",
+            "locationType": "Cave",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461514"
         }
     ],
     "Western Vermillius Gap": [
@@ -206,32 +247,6 @@
             "location": "Wreck of the Mithra",
             "locationType": "Landmark",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=480062"
-        }
-    ],
-    "Eastern Shield Wall": [
-        {
-            "location": "Imperial Testing Station No. 142",
-            "locationType": "Station",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460526"
-        }
-    ],
-    "Western Shield Wall": [
-        {
-            "location": "Imperial Testing Station No. 60",
-            "locationType": "Station",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460550"
-        }
-    ],
-    "The O'odham": [
-        {
-            "location": "Imperial Testing Station No. 71",
-            "locationType": "Station",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460564"
-        },
-        {
-            "location": "Imperial Testing Station No. 163",
-            "locationType": "Station",
-            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460562"
         }
     ]
 }
