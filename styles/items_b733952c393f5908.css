@@ -146,15 +146,7 @@
 	pointer-events: none;
 }
 
-.item.infobox {
-	position: relative;
-}
-
 .item.infobox .item-info {
-	cursor: pointer;
-}
-
-.item.infobox {
 	cursor: pointer;
 }
 

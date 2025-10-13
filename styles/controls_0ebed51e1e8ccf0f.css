@@ -29,25 +29,6 @@
 	outline: 2px solid rgba(255, 165, 0, 0.12);
 	outline-offset: 2px;
 }
-.settings-menu {
-	position: absolute;
-	right: 0;
-	top: 48px;
-	background: rgba(20, 20, 30, 0.95);
-	padding: 10px;
-	border-radius: 8px;
-	display: flex;
-	flex-direction: column;
-	gap: 8px;
-	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
-	min-width: 160px;
-}
-.settings-menu .control-btn {
-	width: 100%;
-	text-align: left;
-	background: transparent;
-	box-shadow: none;
-}
 
 .settings-menu {
 	position: absolute;
