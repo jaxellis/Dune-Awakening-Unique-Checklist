@@ -1,7 +1,9 @@
-const STORAGE_KEY = 'dune-awakening-checklist-v1';
-const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
-const IMAGE_PATH_PREFIX = 'images/';
 const COLLAPSE_KEY = 'dune-awakening-checklist-collapsed-v1';
+const FILTERS_KEY = 'dune-awakening-checklist-filters-v1';
+const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
+const STORAGE_KEY = 'dune-awakening-checklist-v1';
+
+const IMAGE_PATH_PREFIX = 'images/';
 
 let activeFilters = {
 	main: {},
@@ -17,8 +19,6 @@ let jsonData = {
 	locationIcons: {},
 	locations: {},
 };
-
-const FILTERS_KEY = 'dune-awakening-checklist-filters-v1';
 
 function saveFilters() {
 	try {
