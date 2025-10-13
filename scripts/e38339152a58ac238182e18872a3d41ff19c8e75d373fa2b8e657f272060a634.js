@@ -1,7 +1,8 @@
 const STORAGE_KEY = 'dune-awakening-checklist-v1';
 const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
 const IMAGE_PATH_PREFIX = 'images/';
-
+const COLLAPSE_KEY = 'dune-awakening-checklist-collapsed-v1';
+let collapsedCategories = new Set();
 let jsonData = {
 	schematics: {},
 	locationIcons: {},
@@ -387,7 +388,34 @@ function updateItem(itemDiv, checked) {
 
 function toggleCategory(categoryDiv) {
 	if (!categoryDiv) return;
+	const name = categoryDiv.dataset.category;
 	categoryDiv.classList.toggle('collapsed');
+	categoryDiv.classList.contains('collapsed')
+		? collapsedCategories.add(name)
+		: collapsedCategories.delete(name);
+	saveCollapsedCategories();
+}
+
+function saveCollapsedCategories() {
+	try {
+		localStorage.setItem(
+			COLLAPSE_KEY,
+			JSON.stringify([...collapsedCategories])
+		);
+	} catch (e) {
+		console.error('Failed to save collapsed categories', e);
+	}
+}
+
+function loadCollapsedCategories() {
+	try {
+		const raw = localStorage.getItem(COLLAPSE_KEY);
+		if (raw) collapsedCategories = new Set(JSON.parse(raw));
+		else collapsedCategories = new Set();
+	} catch (e) {
+		console.error('Failed to load collapsed categories', e);
+		collapsedCategories = new Set();
+	}
 }
 
 function toggleAll(check) {
@@ -543,6 +571,10 @@ function initializeChecklist() {
 		const categoryDiv = document.createElement('div');
 		categoryDiv.className = 'category';
 		categoryDiv.dataset.category = catKey;
+
+		if (collapsedCategories.has(catKey)) {
+			categoryDiv.classList.add('collapsed');
+		}
 
 		const headerDiv = document.createElement('div');
 		headerDiv.className = 'category-header';
@@ -777,6 +809,7 @@ Promise.all([
 
 	loadSettings();
 	loadFilters();
+	loadCollapsedCategories();
 	initializeChecklist();
 	buildFiltersUI();
 });
