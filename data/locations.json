@@ -26,7 +26,7 @@
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460454"
         },
         {
-            "location": "Step Stone Cavern",
+            "location": "Stepstone Cavern",
             "locationType": "Cave",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461292"
         },
@@ -39,6 +39,16 @@
             "location": "The Spiral",
             "locationType": "Outpost",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460452"
+        },
+        {
+            "location": "The Weeping Chasm",
+            "locationType": "Landmark",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460737"
+        },
+        {
+            "location": "Wreck of the Kytheria",
+            "locationType": "Shipwreck",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460440"
         }
     ],
     "Hagga Basin South": [
@@ -93,6 +103,11 @@
             "location": "Eastern Jumble",
             "locationType": "Outpost",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460512"
+        },
+        {
+            "location": "Piter's Net",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460513"
         }
     ],
     "Jabal Eifrit Al-janub": [
@@ -122,6 +137,11 @@
             "location": "Unmarked Outpost",
             "locationType": "Outpost",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=468227"
+        },
+        {
+            "location": "Wreck of the Tisiphone",
+            "locationType": "Shipwreck",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460485"
         }
     ],
     "Eastern Vermillius Gap": [

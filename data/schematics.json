@@ -516,7 +516,7 @@
             ],
             "location": [
                 "<loc>Miner's Watch</loc>",
-                "NPC Camp",
+                "<loc>Imperial Testing Station No. 10</loc>",
                 "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Pseudo_Pulse-Sword",
@@ -656,9 +656,9 @@
             ],
             "location": [
                 "<loc>Mirzabah's Head</loc>",
-                "<loc>Step Stone Cavern</loc>",
+                "<loc>Stepstone Cavern</loc>",
                 "<loc>Hand of Khidr</loc>",
-                "NPC Camp - Hagga Rift near The Weeping Chasm",
+                "NPC Camp|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub",
                 "<loc>Unmarked Outpost</loc>"
             ],
             "url": "https://awakening.wiki/Buoyant_Reaper_Mk3",
@@ -690,7 +690,7 @@
                 "<loc>The Gasp</loc>",
                 "<loc>Crystal Cove</loc>",
                 "<loc>The Weeping Chasm</loc>",
-                "<loc>Imperial Station No. 29</loc>"
+                "<loc>Imperial Testing Station No. 29</loc>"
             ],
             "url": "https://awakening.wiki/Compact_Compactor_Mk3",
             "image": "5e10b39649611e894a067cd28364b7abd957e67ac8c71b39b2f8388fb73e7172.png"
@@ -702,7 +702,7 @@
                 "Fluid Extractor"
             ],
             "location": [
-                "Hand of Khidr - Jabal Eifrit Al-janub"
+                "<loc>Hand of Khidr</loc>"
             ],
             "url": "https://awakening.wiki/Filter_Extractor_Mk3",
             "image": "9ba0d1619cb7ab7a5d6d28689bae9294e01b5429c1bdefbb921558ee09cf6236.png"
@@ -730,9 +730,10 @@
                 "<loc>CHOAM Mineral Extraction Facility #6</loc>",
                 "<loc>Imperial Testing Station No. 29</loc>",
                 "<loc>Hand of Khidr</loc>",
-                "NPC Camp west of Runaway Station",
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub",
+                "NPC Camp in a cave above Imperial Testing Station No. 29|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462183|Hagga Rift",
                 "<loc>Unmarked Outpost</loc>",
-                "<loc>Step Stone Cavern</loc>"
+                "<loc>Stepstone Cavern</loc>"
             ],
             "url": "https://awakening.wiki/Glutton%27s_Bloodbag",
             "image": "a4c4632ae2c602fb5e130d750d1aeb3d4aa5279e0c299bd5e3d08ba856c5517c.png"
@@ -758,9 +759,9 @@
                 "Water Container"
             ],
             "location": [
-                "<loc>Step Stone Cavern</loc>",
+                "<loc>Stepstone Cavern</loc>",
                 "<loc>Hand of Khidr</loc>",
-                "NPC Camp - Hagga Rift near The Weeping Chasm",
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub",
                 "<loc>Unmarked outpost</loc>"
             ],
             "url": "https://awakening.wiki/Hajra_Literjon_Mk3",
@@ -787,7 +788,9 @@
                 "Light"
             ],
             "location": [
-                ""
+                "<loc>The Spiral</loc>",
+                "<loc>Arctus Cavern</loc>",
+                "<loc>Khidr's Shadow</loc>"
             ],
             "url": "https://awakening.wiki/Inkvine_Boots",
             "image": "2a2469e0192fb7b2f07b1a6f59a510b2bec42d5882d08a4d755d62749487156e.png"
@@ -799,7 +802,9 @@
                 "Light"
             ],
             "location": [
-                ""
+                "<loc>The Spiral</loc>",
+                "<loc>Arctus Cavern</loc>",
+                "<loc>Khidr's Shadow</loc>"
             ],
             "url": "https://awakening.wiki/Inkvine_Gauntlets",
             "image": "fb022553fa3f1d1a01a5cef2385293c2dd40f1ad6ba95f3b700ee0c2f3a0d629.png"
@@ -811,7 +816,9 @@
                 "Light"
             ],
             "location": [
-                ""
+                "<loc>The Spiral</loc>",
+                "<loc>Arctus Cavern</loc>",
+                "<loc>Khidr's Shadow</loc>"
             ],
             "url": "https://awakening.wiki/Inkvine_Jacket",
             "image": "ff408585321e882f139258ab799b59e6fd98ea2d651c8f9800238d11c3b5dd35.png"
@@ -823,7 +830,9 @@
                 "Light"
             ],
             "location": [
-                ""
+                "<loc>The Spiral</loc>",
+                "<loc>Arctus Cavern</loc>",
+                "<loc>Khidr's Shadow</loc>"
             ],
             "url": "https://awakening.wiki/Inkvine_Mask",
             "image": "2a44bcea502aec8fad423585a7f9a2020e7443a1c3e89e64d80f85d0e3b80f42.png"
@@ -835,7 +844,9 @@
                 "Light"
             ],
             "location": [
-                ""
+                "<loc>The Spiral</loc>",
+                "<loc>Arctus Cavern</loc>",
+                "<loc>Khidr's Shadow</loc>"
             ],
             "url": "https://awakening.wiki/Inkvine_Pants",
             "image": "632aacedd8c2165aa3cf4a840b054ce64400cb3fc861cc2a3b12f27a84f8425b.png"
@@ -847,7 +858,9 @@
                 "Heavy"
             ],
             "location": [
-                ""
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
             ],
             "url": "https://awakening.wiki/Karak%27s_Boots",
             "image": "f2aa02e10bca9bf78f0c9a635ee2ecce4efff6c4aea8a2c1784074c336e3b3f9.png"
@@ -859,7 +872,9 @@
                 "Heavy"
             ],
             "location": [
-                ""
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
             ],
             "url": "https://awakening.wiki/Karak%27s_Gauntlets",
             "image": "3b642ef0b3879f8094b6eb1c548d25b4da670dab5d695729d6c4d368d276240c.png"
@@ -871,7 +886,9 @@
                 "Heavy"
             ],
             "location": [
-                ""
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
             ],
             "url": "https://awakening.wiki/Karak%27s_Helmet",
             "image": "052a855820a3fb2d5687db8424e5706298c2793b5d69476c9ad312d511a8cefd.png"
@@ -883,7 +900,9 @@
                 "Heavy"
             ],
             "location": [
-                ""
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
             ],
             "url": "https://awakening.wiki/Karak%27s_Jacket",
             "image": "33c29630eb54b0a1c814d7ed9b9021e6329623a92b170b152d744530cfa31d42.png"
@@ -895,7 +914,9 @@
                 "Heavy"
             ],
             "location": [
-                ""
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
             ],
             "url": "https://awakening.wiki/Karak%27s_Pants",
             "image": "c3198bc389632130b80e77eb12fabf932c725641e5d839b49c4b13dc7421d3ad.png"
@@ -907,7 +928,10 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 23</loc>"
+                "<loc>The Anomaly</loc>",
+                "<loc>The Gasp</loc>",
+                "<loc>Crystal Cove</loc>",
+                "<loc>Imperial Testing Station No. 29</loc>"
             ],
             "url": "https://awakening.wiki/Kel%27s_Stillsuit_Boots",
             "image": "1a9b60ac52e8ca717e3a084aa7ea7f059210ee1169d6c77c1a2aae8b02996210.png"
@@ -919,7 +943,10 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 23</loc>"
+                "<loc>The Anomaly</loc>",
+                "<loc>The Gasp</loc>",
+                "<loc>Crystal Cove</loc>",
+                "<loc>Imperial Testing Station No. 29</loc>"
             ],
             "url": "https://awakening.wiki/Kel%27s_Stillsuit_Garment",
             "image": "6e9a15feed390a600a464a706d763f094164e46abefb142f76008513e184899b.png"
@@ -931,7 +958,10 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 23</loc>"
+                "<loc>The Anomaly</loc>",
+                "<loc>The Gasp</loc>",
+                "<loc>Crystal Cove</loc>",
+                "<loc>Imperial Testing Station No. 29</loc>"
             ],
             "url": "https://awakening.wiki/Kel%27s_Stillsuit_Gloves",
             "image": "3188093f9aa606faeaf2babeae96a17631880206263fedb887501be5e556419b.png"
@@ -943,7 +973,10 @@
                 "Stillsuit"
             ],
             "location": [
-                "<loc>Imperial Testing Station No. 23</loc>"
+                "<loc>The Anomaly</loc>",
+                "<loc>The Gasp</loc>",
+                "<loc>Crystal Cove</loc>",
+                "<loc>Imperial Testing Station No. 29</loc>"
             ],
             "url": "https://awakening.wiki/Kel%27s_Stillsuit_Mask",
             "image": "ff86522ccdc679bc71c285d999c22ce8a0efe21dca7fe9fbd8cf4089e5211fde.png"
@@ -955,7 +988,8 @@
                 "Land"
             ],
             "location": [
-                ""
+                "<loc>Imperial Testing Station No. 10</loc>",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Mohandis_Sandbike_Engine_Mk3",
             "image": "93e29c57a5f2c59f36cc9b436b6fadbbff48d262db2ea99b9e85ae8e57b6a8c1.png"
@@ -967,7 +1001,7 @@
                 "Land"
             ],
             "location": [
-                ""
+                "<loc>Imperial Testing Station No. 10</loc>"
             ],
             "url": "https://awakening.wiki/Night_Rider_Sandbike_Boost_Mk3",
             "image": "052903530b49e1331d750911a3772784d1710a7d949938f342848cd3425d1403.png"
@@ -979,10 +1013,239 @@
                 "Power Pack"
             ],
             "location": [
-                ""
+                "<loc>Beneath the Jumble</loc>",
+                "<loc>Imperial Testing Station No. 76</loc>",
+                "<loc>Kel's Fallback</loc>",
+                "<loc>CHOAM Mineral Extraction Facility #6</loc>",
+                "NPC Camp in a cave above Imperial Testing Station No. 29|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462183|Hagga Rift",
+                "Small Falling Shipwrecks"
             ],
             "url": "https://awakening.wiki/Old_Sparky_Mk3",
             "image": "63307bbdd5fb299cb44d0ae0697b338cceb95c129e99d97a7ce626ade212984c.png"
+        },
+        {
+            "name": "Rattler Boost Module Mk3",
+            "types": [
+                "Vehicle",
+                "Land"
+            ],
+            "location": [
+                "<loc>Imperial Testing Station No. 10</loc>"
+            ],
+            "url": "https://awakening.wiki/Rattler_Boost_Module_Mk3",
+            "image": "a7a628f79b10eb994969385a44bac14f2c7531566bde05a79ac01ece10b5a868.png"
+        },
+        {
+            "name": "Reaper Gloves",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Imperial Testing Station No. 76</loc>",
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>"
+            ],
+            "url": "https://awakening.wiki/Reaper_Gloves",
+            "image": "ba91eb6500ae7cfd19a7b6647c773100315fc25f0ec1eb08a0e8607c702ec50a.png"
+        },
+        {
+            "name": "Rigged Suspensor Jacket",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub"
+            ],
+            "url": "https://awakening.wiki/Rigged_Suspensor_Jacket",
+            "image": "c0f646469ac3b1dd716875b94e28bedc929b052f03c7fa6d3b0871e12267ebe3.png"
+        },
+        {
+            "name": "Ripper",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
+            ],
+            "url": "https://awakening.wiki/Ripper",
+            "image": "afefe3bcec00ecdca9a32c8415d2f679d42fc401890ce6e18a919760113953fc.png"
+        },
+        {
+            "name": "Searing Shiv",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "<loc>Piter's Net</loc>"
+            ],
+            "url": "https://awakening.wiki/Searing_Shiv",
+            "image": "869e3dfc2eebf1dc85b91aed976dd2c4789230815b39099c7d42db82847e66a5.png"
+        },
+        {
+            "name": "Seb's Kisser",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>CHOAM Mineral Extraction Facility #6</loc>",
+                "<loc>Kel's Fallback</loc>",
+                "<loc>Imperial Testing Station No. 76</loc>",
+                "<loc>Beneath the Jumble</loc>",
+                "NPC Camp in a cave above Imperial Testing Station No. 29|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462183|Hagga Rift",
+                "Mission: 'The Tisiphone: New Evidence' from Pinnacle Station",
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://awakening.wiki/Seb%27s_Kisser",
+            "image": "ce9c6a04798093155e5ead9c39fb7a2e487edd8f3eb1cebeda21c62dafb350d3.png"
+        },
+        {
+            "name": "Shock Gauntlets",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Hand of Khidr</loc>",
+                "<loc>Stepstone Cavern</loc>",
+                "<loc>Unmarked Outpost</loc>",
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub"
+            ],
+            "url": "https://awakening.wiki/Shock_Gauntlets",
+            "image": "4a41e664af0c6c03471182ca539e5427ae80010ec5ac39eb0c4a9ea58dbdf1b7.png"
+        },
+        {
+            "name": "Shock-Knife",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "2 Corpses in Hagga Rift across from CHOAM Mineral Extraction Facility #6 up a level"
+            ],
+            "url": "https://awakening.wiki/Shock-Knife",
+            "image": "3a46758b7438c3363c178417daf3a8006c1178c3b1465c48245b0c538fca4bf1.png"
+        },
+        {
+            "name": "Shock-sword",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "<loc>CHOAM Mineral Extraction Facility #6</loc>",
+                "<loc>Kel's Fallback</loc>",
+                "<loc>Beneath the Jumble</loc>",
+                "<loc>Imperial Testing Station No. 76</loc>",
+                "NPC Camp in a cave above Imperial Testing Station No. 29|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462183|Hagga Rift",
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://awakening.wiki/Shock-sword",
+            "image": "9a6ea6eb65ceb99b29b720499c5dbbcf13d2454255bd51610ad42f4c97cd5c05.png"
+        },
+        {
+            "name": "Skin-lined Jacket",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Stepstone Cavern</loc>",
+                "<loc>Hand of Khidr</loc>",
+                "<loc>Unmarked Outpost</loc>",
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub"
+            ],
+            "url": "https://awakening.wiki/Skin-lined_Jacket",
+            "image": "4b1860ad528cc8b38bd588e97d2b0164a46100dd1487c1a92c4a0f2a01cede7b.png"
+        },
+        {
+            "name": "Sprinter's Stillsuit Garment",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://dune.gaming.tools/items/stillsuit_choam_unique_dashed03_top",
+            "image": "ee4bb152b33d6cb8b1060ca3a799f26f1872b63b6917b318c9d8fa445bc3031a.png"
+        },
+        {
+            "name": "Ta'lab Softstep Boots",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Stepstone Cavern</loc>",
+                "<loc>Hand of Khidr</loc>",
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub",
+                "<loc>Unmarked Outpost</loc>"
+            ],
+            "url": "https://awakening.wiki/Ta%27lab_Softstep_Boots",
+            "image": "c912ba26f9197d80d7663268933927c8bcc78588f7135461218b9fb8ba2e8053.png"
+        },
+        {
+            "name": "The Emperor's Wings Mk3",
+            "types": [
+                "Tool",
+                "Suspensor"
+            ],
+            "location": [
+                "<loc>Stepstone Cavern</loc>",
+                "<loc>Hand of Khidr</loc>",
+                "NPC Camp west of Runaway Station|https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=462189|Jabal Eifrit Al-janub",
+                "<loc>Unmarked Outpost</loc>"
+            ],
+            "url": "https://awakening.wiki/The_Emperor%27s_Wings_Mk3",
+            "image": "cf33387d444dafa0fa98ebe1e25194109a7c17859cfbfaa5174b4acf3d262f64.png"
+        },
+        {
+            "name": "The Tapper",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Khidr's Shadow</loc>",
+                "Mission: 'Pinching Spice: The Man in the Shadows'"
+            ],
+            "url": "https://awakening.wiki/The_Tapper",
+            "image": "fe0c1e36c15d1426fac8f451ff35fdaac0d181b879d470ce5e5bb38131407604.png"
+        },
+        {
+            "name": "Way of the Lost",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
+            ],
+            "url": "https://awakening.wiki/Way_of_the_Lost",
+            "image": "c41d05a226e66f2530d9b6100b3c66a8e4842752873acb18be54eae0737e9ea4.png"
+        },
+        {
+            "name": "Zaal's Companion",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Piter's Net</loc>",
+                "<loc>Wreck of the Tisiphone</loc>",
+                "<loc>Wreck of the Kytheria</loc>"
+            ],
+            "url": "https://awakening.wiki/Zaal%27s_Companion",
+            "image": "61a32cac40a0002f9fd5c8046ab4a00db2a01c194595f2e29396335843c4aa64.png"
         }
     ],
     "Aluminum": [

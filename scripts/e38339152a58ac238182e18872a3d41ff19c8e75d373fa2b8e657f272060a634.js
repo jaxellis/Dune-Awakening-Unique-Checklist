@@ -2,19 +2,20 @@ const STORAGE_KEY = 'dune-awakening-checklist-v1';
 const SETTINGS_KEY = 'dune-awakening-checklist-settings-v1';
 const IMAGE_PATH_PREFIX = 'images/';
 const COLLAPSE_KEY = 'dune-awakening-checklist-collapsed-v1';
+
+let activeFilters = {
+	main: {},
+	sub: {},
+};
+let appSettings = {
+	hideChecked: false,
+};
+let checklistData = {};
 let collapsedCategories = new Set();
 let jsonData = {
 	schematics: {},
 	locationIcons: {},
 	locations: {},
-};
-let checklistData = {};
-let appSettings = {
-	hideChecked: false,
-};
-let activeFilters = {
-	main: {},
-	sub: {},
 };
 
 const FILTERS_KEY = 'dune-awakening-checklist-filters-v1';
@@ -671,29 +672,18 @@ function initializeChecklist() {
 
 			item.locationData = (item.location || []).map((locStr) => {
 				const match = locStr.match(/<loc>(.*?)<\/loc>/);
-				if (match) {
-					const locName = match[1].trim();
-					const extraText = locStr.replace(match[0], '').trim();
-					let found = null;
-					let groupName = null;
-					for (const group in jsonData.locations) {
-						const arr = jsonData.locations[group];
-						found = arr.find(
-							(l) => l.location.trim().toLowerCase() === locName.toLowerCase()
-						);
-						if (found) {
-							groupName = group;
-							break;
-						}
+
+				if (!match) {
+					if (locStr.startsWith('NPC Camp')) {
+						const [location, url, group] = locStr.split('|');
+						return {
+							location: 'NPC Camp',
+							url: url,
+							locationType: 'Camp',
+							group: group,
+							extraText: location.replace('NPC Camp', '').trim(),
+						};
 					}
-					return {
-						location: locName,
-						url: found?.url || null,
-						locationType: found?.locationType || null,
-						group: groupName,
-						extraText: extraText || null,
-					};
-				} else {
 					return {
 						location: locStr.trim(),
 						url: null,
@@ -702,6 +692,28 @@ function initializeChecklist() {
 						extraText: null,
 					};
 				}
+
+				const locName = match[1].trim();
+				const extraText = locStr.replace(match[0], '').trim();
+				let found = null;
+				let groupName = null;
+				for (const group in jsonData.locations) {
+					const arr = jsonData.locations[group];
+					found = arr.find(
+						(l) => l.location.trim().toLowerCase() === locName.toLowerCase()
+					);
+					if (found) {
+						groupName = group;
+						break;
+					}
+				}
+				return {
+					location: locName,
+					url: found?.url || null,
+					locationType: found?.locationType || null,
+					group: groupName,
+					extraText: extraText || null,
+				};
 			});
 
 			item.locationData.forEach((loc) => {
