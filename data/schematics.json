@@ -1851,6 +1851,22 @@
             "image": "ec0d40e75906d90fd93f330a0750f18dd15c401c4745af0584314823437c22ea.png"
         },
         {
+            "name": "Sentinel Gauntlets",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>The Aegis</loc>"
+            ],
+            "url": "https://awakening.wiki/Sentinel_Gauntlets",
+            "image": "c5f1789e0707694d5b212833920ca700291477a18265221a3a3e932bef773879.png"
+        },
+        {
             "name": "Sentinel Helmet",
             "types": [
                 "Armor",
