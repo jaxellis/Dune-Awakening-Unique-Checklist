@@ -1,4 +1,4 @@
-import { filterItems } from './filters_f085c58d51acf2e1.js';
+import { filterItems } from './filters_8b34a0006faeadfb.js';
 
 window.onSearchInput = (value) => {
 	filterItems(value);
