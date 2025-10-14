@@ -1724,6 +1724,408 @@
             ],
             "url": "https://awakening.wiki/Power_Gauntlets",
             "image": "c73e96cf35e3abc746ed7fee4dfe702b4940c056607c9d5f7de220723690a206.png"
+        },
+        {
+            "name": "Quirth's Boots",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Quirth%27s_Boots",
+            "image": "28a899837b98892bacf9b1d41adb97c69375a7624dc6dea780e115fb4bc8ccdd.png"
+        },
+        {
+            "name": "Quirth's Gauntlets",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Quirth%27s_Gauntlets",
+            "image": "ec66479b69f7b93ae4a9e1588744713c35e3c8354667c3326fd5286906baac7d.png"
+        },
+        {
+            "name": "Quirth's Helmet",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Quirth%27s_Helmet",
+            "image": "6da7ca66303f13392d21dc1f0c25e1c848c21ea23116c2f84f79643c87e6c55f.png"
+        },
+        {
+            "name": "Quirth's Jacket",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Quirth%27s_Jacket",
+            "image": "25797bc2fe80e80ac6796a54c957d818a4f34d8eca50dafca42152a6f74196f3.png"
+        },
+        {
+            "name": "Quirth's Pants",
+            "types": [
+                "Armor",
+                "Light"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Quirth%27s_Pants",
+            "image": "fa376f0c4bd9cc21cfa30a557f97739d85571b5db62be6eef4c032b5e793b77d.png"
+        },
+        {
+            "name": "Rattler Boost Module Mk4",
+            "types": [
+                "Vehicle",
+                "Land"
+            ],
+            "location": [
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>"
+            ],
+            "url": "https://awakening.wiki/Rattler_Boost_Module_Mk4",
+            "image": "a7a628f79b10eb994969385a44bac14f2c7531566bde05a79ac01ece10b5a868.png"
+        },
+        {
+            "name": "Sand Strider Stillsuit Garment",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://dune.gaming.tools/items/stillsuit_choam_unique_dashed04_top",
+            "image": "8610aece454f3724c679753482d1f4ca55ced8189d26c9953abddf66612b3275.png"
+        },
+        {
+            "name": "Sandflies Carver",
+            "types": [
+                "Tool",
+                "Cutteray"
+            ],
+            "location": [
+                "<loc>Stonestep Village</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>"
+            ],
+            "url": "https://awakening.wiki/Sandflies_Carver",
+            "image": "f80fe696b4a31e71668dd93544b8a4f4f17e2f8334746bf2b52bdc2ca844fa1f.png"
+        },
+        {
+            "name": "Sentinel Boots",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>The Aegis</loc>"
+            ],
+            "url": "https://awakening.wiki/Sentinel_Boots",
+            "image": "ec0d40e75906d90fd93f330a0750f18dd15c401c4745af0584314823437c22ea.png"
+        },
+        {
+            "name": "Sentinel Helmet",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>The Aegis</loc>"
+            ],
+            "url": "https://awakening.wiki/Sentinel_Helmet",
+            "image": "6d4fbbbc9c26200216d18b3e33977db3cb001b1a175eeec1fd4747de3c17cb7c.png"
+        },
+        {
+            "name": "Sentinel Jacket",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>The Aegis</loc>",
+                "Mission: 'Counter-Insurgency: Target the Top'"
+            ],
+            "url": "https://awakening.wiki/Sentinel_Jacket",
+            "image": "054ae0a43c8a9b0454b66b74bb2f36548dffa420d8ed8741b95243fb8bebb2a6.png"
+        },
+        {
+            "name": "Sentinel Pants",
+            "types": [
+                "Armor",
+                "Heavy"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Sirr'asraar Vault</loc>",
+                "<loc>The Aegis</loc>"
+            ],
+            "url": "https://awakening.wiki/Sentinel_Pants",
+            "image": "1d352b326c82cec5b7fc1e49af1e1818266e75a7f84ad8c43e0fbbe04341d066.png"
+        },
+        {
+            "name": "Shadow Hood",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://awakening.wiki/Shadow_Hood",
+            "image": "9d123c183224bc0f58a510a59efaeb9fcda05c7cb3e8b205d2dafc9413a38d8e.png"
+        },
+        {
+            "name": "Shadrath's Drinker",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "<loc>Imperial Testing Station No. 60</loc>",
+                "<loc>Imperial Testing Station No. 71</loc>",
+                "<loc>Rockwarren Village</loc>",
+                "<loc>Stonestep Village</loc>",
+                "Small Falling Shipwrecks"
+            ],
+            "url": "https://awakening.wiki/Shadrath%27s_Drinker",
+            "image": "d7e6e42c8b6186d805e992f788b6eea891a27e70ac605986a7e0dd429957bc5f.png"
+        },
+        {
+            "name": "Shadrath's Edge",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Wreck of the Alecto</loc>",
+                "Mission: 'Monster Slaying: Strike at the Heart'"
+            ],
+            "url": "https://awakening.wiki/Shadrath%27s_Edge",
+            "image": "8526b5ff5d31dcdc321ae6a6a0d4b225cc6bcc76b2a785d46ebf0aad90392797.png"
+        },
+        {
+            "name": "Shadrath's Stillsuit Boots",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Shadrath%27s_Stillsuit_Boots",
+            "image": "ca29b4f55ca893677a31da595e686b586a99552bad5c2dfb6b0011436162df1b.png"
+        },
+        {
+            "name": "Shadrath's Stillsuit Garment",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Shadrath%27s_Stillsuit_Garment",
+            "image": "99cd480090ab56894da4d77ae8083b27cedc95a06fbfe416ad02199ab1ce653f.png"
+        },
+        {
+            "name": "Shadrath's Stillsuit Gloves",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Shadrath%27s_Stillsuit_Gloves",
+            "image": "1fbac73467235c1f8bd89b98353c350e2523cbcf85f3998d11ef2704f88bd355.png"
+        },
+        {
+            "name": "Shadrath's Stillsuit Mask",
+            "types": [
+                "Armor",
+                "Stillsuit"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Shadrath%27s_Stillsuit_Mask",
+            "image": "544f74b00a60af1265452c7239c156fc83d868353e84a64127615f2fad8b2bba.png"
+        },
+        {
+            "name": "Sinner's Bloodbag",
+            "types": [
+                "Tool",
+                "Bloodbag"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Sinner%27s_Bloodbag",
+            "image": "a4c4632ae2c602fb5e130d750d1aeb3d4aa5279e0c299bd5e3d08ba856c5517c.png"
+        },
+        {
+            "name": "Spark-Knife",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>Sirr'asraar Vault</loc>"
+            ],
+            "url": "https://awakening.wiki/Spark-Knife",
+            "image": "1bf536d6e3971bdace43011f549af517e316397149f0539310b6adca02a40edf.png"
+        },
+        {
+            "name": "Spark-sword",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "<loc>Imperial Testing Station No. 142</loc>",
+                "<loc>Imperial Testing Station No. 163</loc>",
+                "Mission: 'The Absent Colonel: A Soldier's End'"
+            ],
+            "url": "https://awakening.wiki/Spark-sword",
+            "image": "5a26b45d5dce41a31ff454414e59088f1393ddc74098ad3d911088f61dca14e1.png"
+        },
+        {
+            "name": "Stammershot",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>"
+            ],
+            "url": "https://awakening.wiki/Stammershot",
+            "image": "989bbf6428716dedc21504be5623ff050a330811341fe86ec8032e3da2a72d15.png"
+        },
+        {
+            "name": "Steady Treadwheel Boost Module Mk4",
+            "types": [
+                "Vehicle",
+                "Land"
+            ],
+            "location": [
+                "?"
+            ],
+            "url": "https://dune.gaming.tools/items/treadwheelboost_unique_lessheat_4",
+            "image": "7bd5c8c11b20d743956d4e13741f0a4c986ce71e40c9f75bb480aa46730ecae2.png"
+        },
+        {
+            "name": "Stormrider Boost Module Mk4",
+            "types": [
+                "Vehicle",
+                "Aerial"
+            ],
+            "location": [
+                "<loc>Fangs of Maraqeb</loc>",
+                "<loc>Mysa Tarill</loc>",
+                ""
+            ],
+            "url": "https://awakening.wiki/Stormrider_Boost_Module_Mk4",
+            "image": "2dc7d7a18cb5382616e9dfd9dd68f50c731c4d25489cd9554d465fcdbea6ecd8.png"
+        },
+        {
+            "name": "Swift Treadwheel Engine Mk4",
+            "types": [
+                "Vehicle",
+                "Land"
+            ],
+            "location": [
+                "?"
+            ],
+            "url": "https://dune.gaming.tools/items/treadwheelengine_unique_speed_4",
+            "image": "005e3dfc5987005bffdeac35a4bb419137a3dd9b8ba3b580933d88e5318440a0.png"
+        },
+        {
+            "name": "Sword of Seven Sorrows",
+            "types": [
+                "Weapon",
+                "Melee"
+            ],
+            "location": [
+                "?"
+            ],
+            "url": "https://dune.gaming.tools/items/unique_sword_bleedyblocky_4",
+            "image": "055acdf0b5259651d2f4f2ff0ee45b3b97bee1a47f6d91b57bc44ed04a8348ad.png"
+        },
+        {
+            "name": "The Emperor's Wings Mk4",
+            "types": [
+                "Tool",
+                "Suspensor"
+            ],
+            "location": [
+                "<loc>Southern Comms</loc>",
+                "<loc>Passage of Artemis</loc>",
+                "<loc>The Beast's Claw</loc>",
+                "<loc>The Aegis</loc>"
+            ],
+            "url": "https://awakening.wiki/The_Emperor%27s_Wings_Mk4",
+            "image": "cf33387d444dafa0fa98ebe1e25194109a7c17859cfbfaa5174b4acf3d262f64.png"
+        },
+        {
+            "name": "Way of the Fighter",
+            "types": [
+                "Weapon",
+                "Ranged"
+            ],
+            "location": [
+                "<loc>Batigh Grotto</loc>",
+                "<loc>Sentinel City</loc>",
+                "<loc>Wreck of the Alecto</loc>"
+            ],
+            "url": "https://awakening.wiki/Way_of_the_Fighter",
+            "image": "e3e71985b0ee0701d325e4eca81f7fc13ffc58b70e9fd62b0bda42714123cd6b.png"
         }
     ],
     "Duraluminum": [

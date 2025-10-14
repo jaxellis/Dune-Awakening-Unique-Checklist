@@ -200,6 +200,18 @@
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460573"
         }
     ],
+    "Sheol": [
+        {
+            "location": "Wreck of the Delphis",
+            "locationType": "Shipwreck",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460577"
+        },
+        {
+            "location": "Wreck of the Euporia",
+            "locationType": "Shipwreck",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460580"
+        }
+    ],
     "The O'odham": [
         {
             "location": "Batigh Grotto",
@@ -242,6 +254,11 @@
             "location": "Sirr'asraar Vault",
             "locationType": "Cave",
             "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=461514"
+        },
+        {
+            "location": "The Aegis",
+            "locationType": "Outpost",
+            "url": "https://mapgenie.io/dune-awakening/maps/arrakis?locationIds=460545"
         },
         {
             "location": "Wreck of the Alecto",
